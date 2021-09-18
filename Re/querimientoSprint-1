@@ -1,0 +1,11 @@
+# Plataforma de Gestión de Vuelos
+
+**El aeropuerto Juan Casiano**  requiere un sistema para gestionar los vuelos entrantes y salientes con el fin de mostrar una información actualizada a los usuarios que desean saber el estado de los mismos.
+Los tipos de usuarios que debe manejar el sistema son superadministrador, piloto, y usuario final.
+El usuario final debe estar en la capacidad de registrarse en la plataforma y a través de un código de vuelo visualizar los datos del mismo (código, avión, piloto, capacidad, estado). El estado de un vuelo hace referencia a si está a tiempo, retrasado, si ha aterrizado o despegado. Así mismo debe poder reservar un cupo en un vuelo, y una vez terminado el viaje podrá ofrecer una retroalimentación del servicio.
+El piloto debe visualizar además de su información personal, los vuelos que tiene asignados, el avión asignado, origen y destino.
+Un superadministrador ejerce el control total de la plataforma (pilotos, vuelos, y usuarios).
+
+**Los datos suministrados por los usuarios deben cumplir la política de privacidad de datos vigente.
+
+La plataforma debe ser desarrollada con el framework Flask.**
