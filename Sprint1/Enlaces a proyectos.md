@@ -6,3 +6,4 @@ Archivo general con los enlaces, pordemos hacer un comentario nuevo (con fecha y
 Falta pulirlo 
 
 2020-09-18 8:16 p. Copiar los datos del archivo que hizo Marleidis y pegarlos en el documento de Drawio
+2020-09-19 7:52 p.m. Esteban: Crear los casos de usuario para comentarios del vuelo y ampliar el primer diagrama de clases con la herencia a usuario.
