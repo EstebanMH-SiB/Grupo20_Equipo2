@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body >
+    <div>
+        <h1 class="titulos">Registro de Usuario</h1>
+        <img src="imagenes/usuarios.png" alt="Icóno de varias personas" width="15%" style="margin-left: 40%;" />
+        <br>
+
+        <div class="agrupados">
+
+            <label>Nombres:</label>
+            <input id="txtUsuario" type="text" name="usuario" placeholder="Nombres completos" title="nombre" class="camposTexto"/>
+            <br><br>
+            <label>Apellidos:</label>
+            <input class="camposTexto" id="txtUsuario" type="text" name="usuario" placeholder="Apellidos completos" title="apellidos" />
+            <br><br>
+
+
+            <label>Cédula:</label>
+            <input class="camposTexto" id="txtUsuario" type="text" name="usuario" placeholder="123456789" title="cedula" />
+            <br><br>
+
+
+            <label>Género:</label>
+
+            <input type="radio" name="genero" value="femenino" />
+            <label class="declaracion">Femenino</label>
+            <input type="radio" name="genero" value="masculino" />
+            <label class="declaracion">Masculino</label>
+            <input type="radio" name="genero" value="otro" />
+            <label class="declaracion">Otro</label>
+
+            <br><br>
+            <label for="birthday">Fecha de nacimiento:</label>
+            <input class="camposTexto" type="date" id="birthday" name="nacimiento">
+            <br><br>
+
+            <label>Tipo de usuario</label>
+            <input type="radio" name="usuario" value="Piloto" />
+            <label class="declaracion">Piloto</label>
+            <input type="radio" name="usuario" value="UsuarioFinal" />
+            <label class="declaracion">Usuario Final</label>
+
+
+            <br>
+            <label>Correo electrónico:</label>
+            <input class="camposTexto" id="txtcorreo" type="text" name="correoElectronico" placeholder="example@correo.com" /><br><br>
+
+
+            <label>Nombre de usuario:</label>
+            <input class="camposTexto" id="txtUsuario" type="text" name="usuario" value="" title="User" placeholder="Usuario1" />
+            <br><br>
+            <label>Contraseña</label>
+            <input class="camposTexto" id="txtPassword" type="password" name="contrasena" value="" /><br><br>
+            <label>Confirmar contraseña</label>
+            <input class="camposTexto" id="txtPassword" type="password" name="confirmarcontrasena" value="" /><br><br>
+
+        </div>
+        <br><br>
+        <div class="agrupados">
+            <input class="boton" type="submit" value="Registrar">
+            <input class="boton" type="submit" value="Atras">
+        </div>
+    </div>
+</body>
+
+</html>

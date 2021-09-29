@@ -9,17 +9,28 @@
     <title>Login</title>
 </head>
 
-<body>
+<body id="paginaLogeo">
     <div>
-        <img src="imagenes/register.png" alt="Icóno de persona para logearse"  width="30%" style="margin-left: 40%;"/>
-
-        
+        <h1 class="titulos">Ingreso</h1>
+        <img src="imagenes/register.png" alt="Icóno de persona para logearse" width="15%" style="margin-left: 40%;" />
+        <br><br>
 
         <div class="agrupados">
-            <p><a href="/registrate.html">No estoy registrado</a>         <a href="/recuperarContraseña.html">¿Olvidaste tu contraseña?</a></p>
+
+            <label>Usuario:</label>
+            <input id="txtUsuario" type="text" name="usuario" value="" title="User" />
+            <br>
+            <br><br>
+            <label>Contraseña</label>
+            <input id="txtPassword" type="password" name="contrasena" value="" />
+
+
         </div>
-
+        <br>
         <div class="agrupados">
+            <p><a href="/registrate.html">No estoy registrado</a> <a href="/recuperarContraseña.html">¿Olvidaste tu
+                    contraseña?</a></p>
+            <br>
             <input class="boton" type="submit" value="Ingresar">
             <input class="boton" type="submit" value="Atras">
         </div>
