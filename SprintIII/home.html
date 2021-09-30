@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css" />
+    <script type="text/javascript" src="codigojava.js"></script>
     <title>Aeropuerto Juan Casiano</title>
 </head>
 
@@ -13,11 +14,14 @@
         
         <!--<h1 class="titulo" id="tituloPrincipal" >Bienvenidos al sistema de gestión de vuelos del
             Aeropuerto Juan Casiano</h1>-->
-            <div class="agrupadosizquierda">
             <img src="imagenes/logo.svg" alt="Icóno del logo"  width="150px" style="text-align:start"/>
-            <input id="txtPassword" type="button" name="login" value="Login" />
+            <div class="agrupadosizquierda">
+
+            <button id="txtPassword" type="button" name="login" value="Login" onclick="location.href='login.html'">Login</button>
             <img src="imagenes/login.png" alt="Icóno de persona para logearse" width="30px"/>
-            <input id="txtPassword" type="button" name="register" value="Registrarse" />
+           
+            <button onclick="location.href='registroUsuario.html'" type="button" id="txtPassword">
+                Registrarse</button>
             <img src="imagenes/register.png" alt="Icóno de persona para logearse"  width="30px"/>
 
     </div>

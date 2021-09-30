@@ -1,12 +1,13 @@
 body {
-    background-color: rgb(17, 202, 193);
+    background-color: rgb(228, 230, 241);
     font-family: 'Lato';
 }
 
 .titulos {
-    color: blue;
+    color: rgb(9, 74, 125);
     align-content: center;
-    text-align: center
+    text-align: center;
+    width: 100%;
 }
 
 .Encabezados {
@@ -19,8 +20,8 @@ body {
 }
 
 .agrupados {
-    background-color: white;
-    border: whitesmoke solid 2px;
+    background-color: rgb(230, 122, 17);
+    border: rgb(68, 22, 22);
     width: 50%;
     border-radius: 5px;
     margin-left: 25%;
@@ -40,13 +41,13 @@ body {
     padding-left: 1%;
     padding-right: 1%;
     margin: 0.01%;
-    background-color: rgb(165, 211, 189);
+    background-color: rgb(109, 68, 68);
     border-style: groove;
 }
 
 .boton {
     color: black;
-    background-color: rgb(221, 236, 13);
+    background-color: rgb(9, 74, 125);
     margin: 1%;
     margin-left: 2%;
     margin-right: 2%;
@@ -60,9 +61,4 @@ body {
     width: 60%;
     height: 5%;
     padding: 100px;
-}
-
-#paginaLogeo {
-    background-color: white;
-    font-family: 'Lato';
 }
