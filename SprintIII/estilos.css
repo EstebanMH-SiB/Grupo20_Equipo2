@@ -1,57 +1,51 @@
-#imagenAvion{
-    margin: auto;
-    width: 60%;
-    height: 5%;
-    padding: 100px;
-  }
-
-.titulos{
-    color: blue;
-    align-content: center;
-    text-align:center
-
-}
-
 body {
     background-color: rgb(17, 202, 193);
     font-family: 'Lato';
 }
 
-#paginaLogeo {
-    background-color:white;
-    font-family: 'Lato';
+.titulos {
+    color: blue;
+    align-content: center;
+    text-align: center
 }
 
 .Encabezados {
     border-style: none;
     border-width: 0px;
     line-height: 30px;
-    padding-left: 5px;
-    width: 95%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .agrupados {
     background-color: white;
-    border:whitesmoke solid 2px;
+    border: whitesmoke solid 2px;
     width: 50%;
     border-radius: 5px;
     margin-left: 25%;
-    display:inline-block;
-    text-align:center
+    display: inline-block;
+    text-align: center;
 }
 
-.camposTexto{
+.agrupadosizquierda {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0%;
+    text-align: end;
+}
+
+.camposTexto {
     height: 5%;
     padding-left: 1%;
     padding-right: 1%;
     margin: 0.01%;
     background-color: rgb(165, 211, 189);
-    border-style:groove;
-
+    border-style: groove;
 }
 
-.boton{
-    color:black;
+.boton {
+    color: black;
     background-color: rgb(221, 236, 13);
     margin: 1%;
     margin-left: 2%;
@@ -59,4 +53,16 @@ body {
     width: 10%;
     height: 35px;
     border-style: double;
+}
+
+#imagenAvion {
+    margin: auto;
+    width: 60%;
+    height: 5%;
+    padding: 100px;
+}
+
+#paginaLogeo {
+    background-color: white;
+    font-family: 'Lato';
 }
