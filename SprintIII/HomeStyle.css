@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
 :root{
     /*Colors*/
@@ -12,6 +13,7 @@
     /*Fonts*/
     --font-monserrat: 'Montserrat', sans-serif;
     --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
 }
 
 
@@ -21,6 +23,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.banner {
+    margin-top: 74px;
+    margin-bottom: 0px;
 }
 
 .menu-link {
@@ -39,43 +51,98 @@ body {
     font-family: var(--font-abadi);
 }
 
-body::after {
+main::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.funcion span {
+.reservarVuelo {
+    background-color: var(--Lapizlazuli);
+    padding: 10px 15%;
+}
+
+.titulo {
+    color: var(--MintCream);
     font-size: 10px;
 }
 
-.funcion div {
+.form {
     display: flex;
-    align-items: center;
+    margin: 5px 10px 10px 10px;
+    padding-left: 20px;
 }
 
-h1,h3 {
-    font-family: var(--font-monserrat);
+.org-des {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.funcion {
+    display: flex;
+}
+
+.personas {
+    color: var(--MintCream);
+    padding-left: 5px;
+}
+
+input {
+    border-color: var(--MintCream);
+}
+
+.reservar {
+    margin-left: 50px;
+}
+
+.org span {
+    padding: 24px;
 }
 
 h1 {
-    margin: 0px 0px 8px 0px;
+    font-family: var(--font-monserrat);
+    margin: 10px 0px 8px 25%;
     font-weight: 800;
-    font-size: 65px;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: var(--Tangerine);
+}
+
+.h1 {
+    margin-left: -25px;
+    font-size: 85px;
+    color: var(--Lapizlazuli)
+}
+
+h2 {
+    margin: 0px 10px;
+    color: var(--MintCream);
 }
 
 h3 {
+    font-family: var(--font-monserrat);
     font-weight: 500;
     margin-bottom: 0px;
+    color: var(--Tangerine);
+}
+
+h3.article {
+    font-family: var(--font-hind);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 h3.aside {
     font-weight: bold;
-    margin-bottom: 18.720px
+    margin-bottom: 18.720px;
+    color: var(--CaputMortuum);
 }
 
 p {
     margin-top: 0px;
+    color: var(--EerieBlack);
 }
 
 .comentarios img {
@@ -104,6 +171,7 @@ p {
     padding: 10px 0px 5px 0px;
     font-size: 16px;
     font-weight: bold;
+    color: var(--Tangerine);
 }
 
 .information {
@@ -112,11 +180,3 @@ p {
     padding: 0px 20px;
     box-sizing: border-box;
 }
-
-form {
-    display: inline-flex;
-    margin: 20px 50px;
-}
-
-
-
