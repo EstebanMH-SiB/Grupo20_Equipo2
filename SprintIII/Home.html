@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aeropuerto Juan Casiano</title>
+    <link rel="icon" type="svg" href="../icons/Logo.svg">
     <link rel="stylesheet" type="text/css" href="HomeStyle.css">
 </head>
 <body>
@@ -16,55 +17,50 @@
         <nav class="menu">
             <a href="Home.html" class="menu-link">Inicio</a>
             <a href="#" class="menu-link">Ingresar</a>
-            <a href="#" class="menu-link">Registrase</a>
+            <a href="#" class="menu-link">Registrar</a>
         </nav>
     </header>
 
     <main>
         <img class="banner" src="../Images/Banner.png" alt="Banner" height="auto" width="100%">
         <form class="reservarVuelo" method="GET" action="">
-            <div class="reservar" id="origen">
-                <label class="funcion">
-                  <span>O R I G E N</span>
-                  <div>
-                      <img src="../icons/search.svg" alt="search">
-                      <input type="text" name="CiudadOrigen" value="" placeholder="Ciudad de origen"> 
-                  </div>
+           <h2> Reserva Tu Vuelo</h2>
+           <div class="form">
+                <div class="org-des">
+                        <label class="org">
+                                <span class="titulo">O R I G E N</span>
+                                <div class="funcion">
+                                    <img src="../icons/search.svg" alt="" width="24px" height="24px">
+                                    <input type="text" class="origen" name="origen">
+                                </div>
+                        </label>
+                        <label class="org">
+                                <span class="titulo">D E S T I N O</span>
+                                <div class="funcion">
+                                    <img src="../icons/search.svg" alt="" width="24px" height="24px">
+                                    <input type="text" class="destino" name="destino">
+                                </div>
+                        </label>
+                    </div>
+                <label class="reservar">
+                    <span class="titulo">F  E C H A</span>
+                    <div class="funcion">
+                        <input type="date" class="fecha" name="fecha">
+                        </div>
                 </label>
-            </div>
-            <div class="reservar" id="destino">
-                <label class="funcion">
-                  <span>D E S T I N O</span>
-                  <div>
-                      <img src="../icons/search.svg" alt="search" width="24" height="24" />
-                      <input type="text" name="CiudadDestino" value="" placeholder="Ciudad de destino"/>
-                  </div>
+                <label class="reservar">
+                    <span class="titulo">P E R S O N A S</span>
+                    <div class="funcion">
+                        <img src="../icons/userb.svg" alt="" width="24px" height="24px">
+                        <input type="number" name="persona" class="persona" min="1" max="99">
+                        <span class="personas">personas</span>
+                        </div>
                 </label>
-              </div>
-            <div class="reservar" id="fecha">
-                <label class="funcion">
-                  <span>F E C H A</span>
-                  <div> 
-                      <input type="date" name="fechadesalida" value="" placeholder="Fecha de Salida">
-                  </div>
-                </label>
-            </div>
-            <div class="reservar" id="persona">
-                <label class="funcion">
-                   <span>P E R S O N A S</span>
-                   <div>
-                       <img src="../icons/user.svg" alt="search" height="auto" width="20px">
-                       <input type="number" name="numerodepersonas" value="1" min="1" max="99">
-                   </div>
-                </label>
-            </div>
-            <div class="reservar">
-                <button class="Buscar" type="submit" name="Buscar"> Buscar </button>
             </div>
         </form>
 
         <article class="information">
-            <h1>¿Quiénes Somos?</h1>
+            <h1>¿Quiénes <span class="h1">Somos?</span></h1>
             <p>
                 El Aeropuerto Juan Casiano Solís es la terminal aérea que sirve al municipio de Guapi en el 
                 departamento de Cauca ubicado al sur occidente de Colombia. En él sólo llega operación 
@@ -77,13 +73,14 @@
                 asciende y desciende en intervalos. Es una de las regiones que registra mayor pluviosidad en 
                 el mundo.
             </p>
+            <img src="../Images/GUAPI.jpg" alt="Juan Casiano" width="100%" height="auto">
             <h3 class="article">Misión</h3>
-            <p>
+            <p class="mision">
                 El Aeropuerto Juan Casiano tiene como misión servirle al país y brindarle el servicio y el
                 transporte que se merecen las personas del departamento del Cauca. 
             </p>
             <h3 class="article">Visión</h3>
-            <p>
+            <p class="mision">
                 El Aeropuerto Juan Casiano tiene como visión que en el 2023 pueda expandirse más de lo que
                 esta, y con la ayuda de la inversión del gobierno en este atraer y transportar a más personas.
             </p>
