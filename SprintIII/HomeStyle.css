@@ -88,7 +88,10 @@ main::after {
 }
 
 input {
-    border-color: var(--MintCream);
+    border-radius: 10px;
+    border: none;
+    color: #58201D;
+    padding-left: 10px;
 }
 
 .reservar {
@@ -103,7 +106,7 @@ button {
     background-color: var(--Tangerine);
     color: var(--MintCream);
     margin-left: 30px;
-    border-color: none;
+    border: none;
     border-radius: 50px;
     padding: 0px 50px;
     font-family: var(--font-monserrat);
