@@ -1,77 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
-    <script type="text/javascript" src="codigojava.js"></script>
-    <title>Registro de Usuario</title>
+    <title>Registro</title>
+    <link rel="icon" type="svg" href="../../icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="../css/RUsuarioStyle.css">
 </head>
+<body>
+    
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="Home.html" class="menu-link">Inicio</a>
+            <a href="Login.html" class="menu-link">Ingresar</a>
+            <a href="RegistroUsuario.html" class="menu-link">Registrar</a>
+        </nav>
+    </header>
 
-<body >
-    <div>
-        <h1 class="titulos">Registro de Usuario</h1>
-        <img src="imagenes/usuarios.png" alt="Icóno de varias personas" width="15%" style="margin-left: 40%;" />
-        <br>
+    <main>
+        <img src="../../icons/group.svg" alt="group.svg"class="group">
+        <form class="registrarUsuario" method="GET" action="">
+            <h1>Registrarse</h1>
+            <div class="form">
+                <div class="name-sur">
+                    <label class="ns">
+                        <span class="titulo">Nombres:</span>
+                        <input type="text" name="name">
+                    </label>
+                    <label class="ns">
+                        <span class="titulo">Apellidos:</span>
+                        <input type="text" name="surname">
+                    </label>
+                </div>
+                <label class="registrar">
+                    <span class="titulo">Sexo:</span>
+                    <select name="sex">
+                        <option value="" selected>--Seleciona tu sexo--</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="null">Prefiero no decir</option>
+                    </select>
+                </label>
+                <label class="registrar">
+                    <span class="titulo">Fecha de Nacimiento:</span>
+                    <input type="date" name="birthday">
+                </label>
+                <span class="pWarning" id="b-dayWarning"></span>
+                <label class="registrar">
+                    <span class="titulo">Correo Electrónico:</span>
+                    <input type="email" name="email" placeholder="example@correo.com">
+                </label> <span class="pWarning" id="e-Warning"></span> <br>
+                <label class="registrar">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" name="username">
+                </label> <span class="uWarning" id="uWarning"></span>
+                <label class="registrar">
+                    <span class="titulo">Contraseña:</span>
+                    <input type="password" name="password">
+                </label>
+                <span class="pWarning" id="pWarning"></span>
+                <label for="" class="registrar">
+                    <span class="titulo">Confirmar Contraseña:</span>
+                    <input type="password" name="pconfirmation">
+                </label>
+                <span class="pcWarning" id="pcWarning"></span>
+            </div>
+            <div class="buttons">
+                <button class="bRegistrar" type="submit">Registrarse</button>
+                <button class="bAtras">
+                    <a href="Home.html" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
 
-        <div class="agrupados">
-
-            <label>Nombres:</label>
-            <input id="txtUsuario" type="text" name="usuario" placeholder="Nombres completos" title="nombre" class="camposTexto"/>
-            <br><br>
-            <label>Apellidos:</label>
-            <input class="camposTexto" id="txtUsuario" type="text" name="usuario" placeholder="Apellidos completos" title="apellidos" />
-            <br><br>
-
-
-            <label>Cédula:</label>
-            <input class="camposTexto" id="txtUsuario" type="text" name="usuario" placeholder="123456789" title="cedula" />
-            <br><br>
-
-
-            <label>Género:</label>
-
-            <input type="radio" name="genero" value="femenino" />
-            <label class="declaracion">Femenino</label>
-            <input type="radio" name="genero" value="masculino" />
-            <label class="declaracion">Masculino</label>
-            <input type="radio" name="genero" value="otro" />
-            <label class="declaracion">Otro</label>
-
-            <br><br>
-            <label for="birthday">Fecha de nacimiento:</label>
-            <input class="camposTexto" type="date" id="birthday" name="nacimiento">
-            <br><br>
-
-            <label>Tipo de usuario</label>
-            <input type="radio" name="usuario" value="Piloto" />
-            <label class="declaracion">Piloto</label>
-            <input type="radio" name="usuario" value="UsuarioFinal" />
-            <label class="declaracion">Usuario Final</label>
-
-
-            <br>
-            <label>Correo electrónico:</label>
-            <input class="camposTexto" id="txtcorreo" type="text" name="correoElectronico" placeholder="example@correo.com" /><br><br>
-
-
-            <label>Nombre de usuario:</label>
-            <input class="camposTexto" id="txtUsuario" type="text" name="usuario" value="" title="User" placeholder="Usuario1" />
-            <br><br>
-            <label>Contraseña</label>
-            <input class="camposTexto" id="txtPassword" type="password" name="contrasena" value="" /><br><br>
-            <label>Confirmar contraseña</label>
-            <input class="camposTexto" id="txtPassword" type="password" name="confirmarcontrasena" value="" /><br><br>
-
-        </div>
-        <br><br>
-        <div class="agrupados">
-            <input class="boton" type="submit" value="Registrar">
-            <button class="boton" type="button" onclick="location.href='home.html'">Atras</button>
-        </div>
-    </div>
 </body>
-
 </html>
