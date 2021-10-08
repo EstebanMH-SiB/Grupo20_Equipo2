@@ -5,39 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
-    <script type="text/javascript" src="codigojava.js"></script>
-    <title>Login</title>
+    <title>Ingresar</title>
+    <link rel="icon" type="svg" href="../../icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="../css/LoginStyle.css">
 </head>
 
-<body id="paginaLogeo">
-    <div>
-        <h1 class="titulos">Ingreso</h1>
-        <img src="imagenes/register.png" alt="Icóno de persona para logearse" width="15%" style="margin-left: 40%;" />
-        <br><br>
+<body>
 
-        <div class="agrupados">
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="Home.html" class="menu-link">Inicio</a>
+            <a href="Login.html" class="menu-link">Ingresar</a>
+            <a href="RegistroUsuario.html" class="menu-link">Registrar</a>
+        </nav>
+    </header>
 
-            <label>Usuario:</label>
-            <input id="txtUsuario" type="text" name="usuario" value="" title="User" />
-            <br>
-            <br><br>
-            <label>Contraseña</label>
-            <input id="txtPassword" type="password" name="contrasena" value="" />
-
-
-        </div>
-        <br>
-        <div class="agrupados">
-            <p><a href="registroUsuario.html">No estoy registrado</a> <a href="recuperarContraseña.html">¿Olvidaste tu
-                    contraseña?</a></p>
-            <br>
-            <input class="boton" type="submit" value="Ingresar">
-            <button class="boton" type="button" onclick="location.href='home.html'">Atras</button>
-        </div>
-
-
-    </div>
+    <main>
+        <img src="../../icons/user+.svg" alt="user+.svg" class="user"/>
+        <form class="logUsuario" method="GET" action="">
+            <h1>Ingresar</h1>
+            <div class="form">
+                <label class="ns">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" name="userName">
+                </label>
+                <label class="ns">
+                    <span class="titulo">Contraseña:</span>
+                    <input type="password" name="password">
+                </label>
+            </div>
+            <div class="links">
+                <a href="#" class="log-link">¿Olvidaste Tu Contraseña?</a>
+                <button class="bLogin" type="submit">Ingresar</button>
+                <div class="bellow">
+                    <a href="RegistroUsuario.html" class="log-link">No Estoy Registrado</a>
+                    <button class="bAtras">
+                        <a href="Home.html" class="bLink">Atras</a>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
-
 </html>
