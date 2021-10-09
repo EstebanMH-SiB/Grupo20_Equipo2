@@ -5,36 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
-    <script type="text/javascript" src="codigojava.js"></script>
-    <title>¿Olvidaste tu contraseña?</title>
+    <title>Recuperar Contraseña</title>
+    <link rel="icon" type="svg" href="../../icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="../css/RContraseñaStyle.css">
 </head>
 
-<body id="paginaLogeo">
-    <div>
-        <h1 class="titulos">Recordar contraseña</h1>
-        <img src="imagenes/lock.png" alt="Icóno de candado" width="15%" style="margin-left: 40%;" />
-        <br><br>
+<body>
 
-        <div class="agrupados">
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="Home.html" class="menu-link">Inicio</a>
+            <a href="Login.html" class="menu-link">Ingresar</a>
+            <a href="RegistroUsuario.html" class="menu-link">Registrar</a>
+        </nav>
+    </header>
 
-            <label>Usuario:</label>
-            <input id="txtUsuario" type="text" name="usuario" value="" title="User" placeholder="Usuario1"/>
-            <br>
-            <br>
-            <label>Correo electrónico:</label>
-            <input id="txtcorreo" type="text" name="correoElectronico"  placeholder="example@correo.com"/>
-
-
-        </div>
-        <br><br>
-        <div class="agrupados">
-            <input class="boton" type="submit" value="Recuperar">
-            <input class="boton" type="submit" value="Atras">
-        </div>
-
-
-    </div>
+    <main>
+        <img src="../../icons/lock.svg" alt="lock.svg" class="lock"/>
+        <form class="rContraseña" method="GET" action="">
+            <h1>Recuperar Contraseña</h1>
+            <div class="form">
+                <label class="ns">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" name="userName">
+                </label>
+                <label class="ns">
+                    <span class="titulo">Correo Electronico:</span>
+                    <input type="email" name="e-mail">
+                </label>
+            </div>
+            <div class="links">
+                <button class="bRecuperar">Recuperar</button>
+                <button class="bAtras">
+                    <a href="Login.html" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
 </body>
-
 </html>
