@@ -83,11 +83,21 @@ body {
     padding-top: 10px;
 }
 
+.registrar input {
+    width: 35%;
+}
+
 input {
     border-radius: 10px;
     padding: 3px 10px;
     border-color: var(--Lapizlazuli);
     font-family: var(--font-hind);
+}
+
+.eye {
+    position:absolute;
+    margin-top: 4px;
+    margin-left: -32px;
 }
 
 .titulo {

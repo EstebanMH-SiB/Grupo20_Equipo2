@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar Contraseña</title>
+    <title>Eliminar Usuario</title>
     <link rel="icon" type="svg" href="../../icons/Logo.svg">
-    <link rel="stylesheet" type="text/css" href="../css/RContraseñaStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/EUsuarioStyle.css">
 </head>
 
 <body>
@@ -24,9 +24,9 @@
     </header>
 
     <main>
-        <img src="../../icons/lock.svg" alt="lock.svg" class="lock"/>
-        <form class="rContraseña" method="GET" action="">
-            <h1>Recuperar Contraseña</h1>
+        <img src="../../icons/userb.svg" alt="user+.svg" class="user"/>
+        <form class="eUsuario" method="GET" action="">
+            <h1>Eliminar Usuario</h1>
             <div class="form">
                 <label class="ns">
                     <span class="titulo">Usuario:</span>
@@ -36,14 +36,21 @@
                     <span class="titulo">Correo Electronico:</span>
                     <input type="email" name="email" placeholder="example@correo.com">
                 </label>
+                <label class="ns">
+                    <span class="titulo">Contraseña:</span>
+                    <input type="password" name="password">
+                </label>
+                <label class="ns">
+                    <span class="titulo">Motivo de la Eliminación:</span>
+                    <textarea class="comentario" placeholder="Indique breve descripción de la eliminación"></textarea>
+                </label>
             </div>
             <div class="links">
-                <button class="bRecuperar">Recuperar</button>
+                <button class="bBorrar">Eliminar</button>
                 <button class="bAtras">
-                    <a href="Login.html" class="bLink">Atras</a>
+                    <a href="#" class="bLink">Atras</a>
                 </button>
             </div>
         </form>
     </main>
 </body>
-</html>

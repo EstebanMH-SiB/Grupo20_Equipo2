@@ -45,18 +45,18 @@ body {
     font-family: var(--font-abadi);
 }
 
-.logUsuario, .user {
+.eUsuario, .user {
     float: left;
     width: 50%;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 
-.logUsuario {
-    margin-top: 120px;
+.eUsuario {
+    margin-top: 110px;
 }
 
-.ns, .links {
+.ns{
     display: flex;
     flex-direction: column;
     margin-right: 180px;
@@ -80,31 +80,22 @@ h1 {
     margin-bottom: 5px;
 }
 
-input {
+input, textarea {
     border-radius: 10px;
     padding: 3px 10px;
     border-color: var(--Lapizlazuli);
     font-family: var(--font-hind);
 }
 
-.eye {
-    position:absolute;
-    margin-top: 28px;
-    margin-left: 31%;
-}
-
-.log-link, .bLogin {
-    margin-bottom: 20px;
-}
-
-.bellow {
+.links {
     margin-top: 10px;
+    margin-right: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.bLogin {
+.bBorrar {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
@@ -118,23 +109,9 @@ input {
     padding: 10px 40px;
 }
 
-.bLink, .bLogin {
+.bBorrar, .bLink {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;
     color: var(--MintCream);
-}
-
-.log-link {
-    text-decoration: none;
-    font-size: bold;
-    color: var(--Tangerine); 
-}
-
-.log-link:hover {
-    text-decoration: underline;
-}
-
-.bellow a {
-    margin-bottom: 0px;
 }
