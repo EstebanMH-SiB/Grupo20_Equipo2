@@ -43,6 +43,7 @@
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
+    color: var(--EerieBlack);
 }
 
 .registrarUsuario, .form {
@@ -68,14 +69,14 @@ body {
 }
 
 .group {
-    margin-top: 80px;
+    margin-top: 90px;
     margin-left: 130px;
     width: 540px;
     height: auto;
 }
 
 .registrarUsuario {
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 .registrar {
@@ -99,7 +100,7 @@ h1 {
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 180px;
     display: flex;
     justify-content: space-between;
@@ -126,4 +127,25 @@ h1 {
     font-family: var(--font-monserrat);
     font-size: bold;
     color: var(--MintCream);
+}
+
+.checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    padding: 5px;
+}
+
+.T-C{
+    text-decoration: none;
+    font-size: bold;
+    color: var(--EerieBlack);
+}
+
+.T-C:hover {
+    color: var(--Tangerine);
+    text-decoration: underline;
 }
