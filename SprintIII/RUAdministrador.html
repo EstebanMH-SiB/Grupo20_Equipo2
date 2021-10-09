@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="icon" type="svg" href="../../icons/Logo.svg">
-    <link rel="stylesheet" type="text/css" href="../css/Registrar.css">
+    <link rel="stylesheet" type="text/css" href="../css/RegistrarStyle.css">
 </head>
 <body>
     
@@ -68,6 +68,14 @@
                     <input type="password" name="pconfirmation">
                 </label>
                 <span class="pcWarning" id="pcWarning"></span>
+                <label class="registrar">
+                    <span class="titulo">Tipo de Usuario:</span>
+                    <select name="sex">
+                        <option value="superadministrador">Administrador</option>
+                        <option value="usuario" selected>Usuario</option>
+                        <option value="piloto">Piloto</option>
+                    </select>
+                </label>
             </div>
             <div class="buttons">
                 <button class="bRegistrar" type="submit">Registrarse</button>
