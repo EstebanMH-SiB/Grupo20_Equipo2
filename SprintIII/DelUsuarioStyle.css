@@ -40,80 +40,48 @@
     color: var(--Tangerine);
 }
 
+.menu-link span {
+    font-size: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    margin: -8px 0px 0px -50px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: -12px;
+    width: 30pt;
+    height: auto;
+}
+
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
-    color: var(--EerieBlack);
 }
 
-.registrarUsuario, .form {
-    display: flex;
-    flex-direction: column;
-}
-
-.ns {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;   
-}
-
-.name-sur {
-    display: flex;
-}
-
-.registrarUsuario, .group {
+.eUsuario, .user {
     float: left;
     width: 50%;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 
-.group {
-    margin-top: 90px;
-    margin-left: 130px;
-    width: 540px;
+.eUsuario {
+    margin-top: 110px;
+}
+
+.ns{
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    margin-bottom: 20px;
+}
+
+.user {
+    margin-top: 120px;
+    margin-left: 150px;
+    width: 500px;
     height: auto;
-}
-
-.registrarUsuario {
-    margin-top: 80px;
-}
-
-.registrar {
-    padding-top: 10px;
-}
-
-.registrar input, .registrar-b input {
-    width: 35%;
-}
-
-input {
-    border-radius: 10px;
-    padding: 3px 10px;
-    border-color: var(--Lapizlazuli);
-    font-family: var(--font-hind);
-}
-
-.eye {
-    position:absolute;
-    margin-top: 4px;
-    margin-left: -32px;
-}
-
-.warning {
-    font-size: 10px;
-    color: var(--Tangerine);
-    padding-top: 5px;
-}
-
-.requisitos {
-    font-size: 10px;
-    color: var(--CaputMortuum);
-    padding-top: 5px;
-}
-
-.titulo {
-    font-weight: bold;
 }
 
 h1 {
@@ -121,20 +89,31 @@ h1 {
     font-size: 40px;
 }
 
+.titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
 .buttons {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.bRegistrar {
+.bGestion {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
     padding: 10px 40px;
-    color: var(--MintCream);
 }
 
 .bAtras {
@@ -144,30 +123,19 @@ h1 {
     padding: 10px 40px;
 }
 
-.bLink, .bRegistrar {
+.bGestion, .bLink {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;
     color: var(--MintCream);
 }
 
-.checkbox {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+.od input {
+    width: 105%;
 }
 
-.checkbox label {
-    padding: 5px;
-}
-
-.T-C{
-    text-decoration: none;
-    font-size: bold;
-    color: var(--EerieBlack);
-}
-
-.T-C:hover {
-    color: var(--Tangerine);
-    text-decoration: underline;
+.eye {
+    position:absolute;
+    margin-top: 28px;
+    margin-left: 31%;
 }

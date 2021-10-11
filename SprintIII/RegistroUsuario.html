@@ -22,18 +22,20 @@
     </header>
 
     <main>
-        <img src="../../icons/group.svg" alt="group.svg"class="group">
-        <form class="registrarUsuario" method="GET" action="">
+        <img src="../../icons/group.svg" alt="group.svg" class="group">
+        <form class="registrarUsuario" method="GET" action="" onsubmit="">
             <h1>Registrarse</h1>
             <div class="form">
                 <div class="name-sur">
                     <label class="ns">
                         <span class="titulo">Nombres:</span>
                         <input type="text" name="name">
+                        <span class="warning" id="nameWarning"></span>
                     </label>
                     <label class="ns">
                         <span class="titulo">Apellidos:</span>
                         <input type="text" name="surname">
+                        <span class="warning" id="snameWarning"></span>
                     </label>
                 </div>
                 <label class="registrar">
@@ -49,36 +51,43 @@
                     <span class="titulo">Fecha de Nacimiento:</span>
                     <input type="date" name="birthday">
                 </label>
-                <span class="pWarning" id="b-dayWarning"></span>
                 <label class="registrar">
                     <span class="titulo">Correo Electrónico:</span>
                     <input type="email" name="email" placeholder="example@correo.com">
-                </label> <span class="pWarning" id="e-Warning"></span> <br>
-                <label class="registrar">
+                </label> 
+                <span class="warning" id="e-Warning"></span>
+                <br>
+                <label class="registrar-b">
                     <span class="titulo">Usuario:</span>
-                    <input type="text" name="username">
-                </label> <span class="uWarning" id="uWarning"></span>
-                <label class="registrar">
+                    <input type="text" name="username" 
+                           onfocus="mostraruserReq('◦Tener mínimo 6 caractéres<br>◦Tener máximo 12 caractéres<br>◦Tener Números');"
+                           onblur="mostraruserReq('')">
+                </label> 
+                <span class="warning" id="uWarning"></span> <span class="requisitos" id="uReq"></span>
+                <label class="registrar-b">
                     <span class="titulo">Contraseña:</span>
-                    <input type="password" name="password">
+                    <input type="password" name="password"
+                           onfocus="mostrarpReq('◦Tener mínimo 8 caractéres<br>◦Tener máximo 12 caractéres<br>◦Tener Números<br>◦Tener Mayúsculas y Minúsculas');"
+                           onblur="mostrarpReq('')">
                     <img src="../../icons/eyeO.svg" alt="ver" class="eye">
-                </label>
-                <span class="pWarning" id="pWarning"></span>
-                <label class="registrar">
+                </label> 
+                <span class="warning" id="pWarning"></span> <span class="requisitos" id="pReq"></span>
+                <label class="registrar-b">
                     <span class="titulo">Confirmar Contraseña:</span>
                     <input type="password" name="pconfirmation">
                     <img src="../../icons/eyeO.svg" alt="ver" class="eye">
-                </label>
-                <span class="pcWarning" id="pcWarning"></span>
+                </label> 
+                <span class="warning" id="pcWarning"></span>
             </div>
             <div class="checkbox">
-                <input type="checkbox" value="True" name="TeC" id="TeC" class="check">
+                <input type="checkbox" value="" id="TeC" class="check">
                 <label for="TeC" class="check">
-                    Acepta los <a href="#" class="T-C">Términos y Condiciones</a>
+                    Acepta los <a href="" class="T-C">Términos y Condiciones</a>
                 </label>
+                <span class="warning" id="TCWarning"></span>
             </div>
             <div class="buttons">
-                <button class="bRegistrar" type="submit">Registrarse</button>
+                <button class="bRegistrar" type="submit">Registrar</button>
                 <button class="bAtras">
                     <a href="Home.html" class="bLink">Atras</a>
                 </button>
@@ -87,4 +96,5 @@
     </main>
 
 </body>
+<script type="text/javascript" src="../js/RUsuarioScript.js"></script>
 </html>

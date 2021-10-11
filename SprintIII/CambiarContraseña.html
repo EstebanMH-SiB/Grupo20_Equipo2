@@ -8,6 +8,7 @@
     <title>Eliminar Usuario</title>
     <link rel="icon" type="svg" href="../../icons/Logo.svg">
     <link rel="stylesheet" type="text/css" href="../css/DelUsuarioStyle.css">
+    <style> form { margin-left: 33%; } h1 { padding-left: 29px; } </style>
 </head>
 
 <body>
@@ -17,9 +18,9 @@
             <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
         </a>
         <nav class="menu">
-            <a href="#" class="menu-link"></a>
-            <a href="#" class="menu-link"></a>
-            <a href="#" class="menu-link">
+            <a href="" class="menu-link"></a>
+            <a href="" class="menu-link"></a>
+            <a href="" class="menu-link">
                 Name Surname
                 <img src="../../icons/user.svg" alt="user">
                 <span>BIENVENIDO,</span>
@@ -28,29 +29,32 @@
     </header>
 
     <main>
-        <img src="../../icons/userb.svg" alt="user+.svg" class="user"/>
         <form class="eUsuario" method="GET" action="">
-            <h1>Eliminar Usuario</h1>
+            <h1>Cambiar Contraseña</h1>
             <div class="form">
                 <label class="ns">
-                    <span class="titulo">Usuario:</span>
-                    <input type="text" name="userName">
-                </label>
-                <label class="ns">
-                    <span class="titulo">Correo Electronico:</span>
-                    <input type="email" name="email" placeholder="example@correo.com">
-                </label>
-                <label class="ns">
-                    <span class="titulo">Contraseña:</span>
+                    <span class="titulo">Contraseña Anterior:</span>
                     <input type="password" name="password">
+                    <img src="../../icons/eyeO.svg" alt="ver" class="eye">
+                    <span class="warning" id="npWarning"></span>
                 </label>
                 <label class="ns">
-                    <span class="titulo">Motivo de la Eliminación:</span>
-                    <textarea class="comentario" placeholder="Indique breve descripción de la eliminación"></textarea>
+                    <span class="titulo">Nueva Contraseña:</span>
+                    <input type="password" name="password"
+                           onfocus="mostrarpReq('◦Tener mínimo 8 caractéres<br>◦Tener máximo 12 caractéres<br>◦Tener Números<br>◦Tener Mayúsculas y Minúsculas');"
+                           onblur="mostrarpReq('')">
+                    <img src="../../icons/eyeO.svg" alt="ver" class="eye">
+                    <span class="warning" id="pWarning"></span>
+                </label>
+                <label class="ns">
+                    <span class="titulo">Confirmar Nueva Contraseña:</span>
+                    <input type="password" name="password">
+                    <img src="../../icons/eyeO.svg" alt="ver" class="eye">
+                    <span class="warning" id="pcWarning"></span>
                 </label>
             </div>
             <div class="buttons">
-                <button class="bGestion">Eliminar</button>
+                <button class="bGestion">Cambiar</button>
                 <button class="bAtras">
                     <a href="#" class="bLink">Atras</a>
                 </button>

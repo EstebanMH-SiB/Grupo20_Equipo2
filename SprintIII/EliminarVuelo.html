@@ -1,63 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
-    <script type="text/javascript" src="codigojava.js"></script>
-    <title>Eliminación de vuelos</title>
+    <title>Eliminación de Vuelo</title>
+    <link rel="icon" type="svg" href="../../icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="../css/GestionarVueloStyle.css">
 </head>
-
 <body>
+    
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link">
+                Name Surname
+                <img src="../../icons/user.svg" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
+        </nav>
+    </header>
 
-    <body>
-        <div>
-            <h1 class="titulos">Eliminación de vuelos</h1>
-            <img src="imagenes/avionarriba.png" alt="Icóno de avión" width="15%" style="margin-left: 40%;" />
-            <br>
 
-            <div class="agrupados">
-                <label>Código del vuelo:</label>
-                <input id="txtcodigoVuelo" type="text" name="codigoVuelo" placeholder="ID vuelo" title="codigoVuelo" class="camposTexto"/>
-                <br><br>
-                <label>Código del avión:</label>
-                <input id="txtcodigoAvion" type="text" name="codigoAvion" placeholder="ID vuelo" title="codigoAvion"
-                    class="camposTexto" />
-                <br><br>
-                <label>Código del piloto:</label>
-                <input class="camposTexto" id="txtcodigoPiloto" type="text" name="txtcodigoPiloto"
-                    placeholder="ID Piloto" title="codigoPiloto" />
-                    <br><br>
-                <label>Itinerario de vuelo:</label>
-                <input id="txtitinerario" type="text" name="itinerario" placeholder="Ciudad de origen - destino"
-                    title="itinerario" class="camposTexto" />
-                <br><br>
-                <label for="birthday">Fecha de salida:</label>
-                <input class="camposTexto" type="date" id="birthday" name="nacimiento">
-                <br><br>
-
-                <label>Hora de salidad:</label>
-                <input class="camposTexto" id="txthoraSalida" type="time" name="horaSalida" placeholder="00:00"
-                    title="horaSalida" />
-                <br><br>
-                <label>Motivo de la eliminación:</label>
-                <textarea class="camposTexto" id="txtmotivoEliminar" type="textarea" name="motivoEliminar" 
-                    title="motivoEliminar"rows="2" cols="50">Haga una breve descripción del motivo para eliminar el vuelo</textarea>
-
+    <main>
+        <img src="../../icons/airplane.svg" alt="airplane.svg" class="airplane">
+        <form class="gestionarVuelo" method="GET" action="" onsubmit="">
+            <h1>Eliminar Vuelo</h1>
+            <div class="vuelo">
+                <h3>org</h3><h3>-</h3><h3>des</h3>
             </div>
-            <br><br>
-
-
-
-            <div class="agrupados">
-                <input class="boton" type="submit" value="Eliminar">
-                <input class="boton" type="submit" value="Atras">
+            <div class="form">
+                <label class="gestion">
+                    <span class="titulo">Fecha de Salida:</span>
+                    <input type="date" name="departure-D">
+                </label>
+                <label class="gestion">
+                    <span class="titulo">Hora de Salida:</span>
+                    <input type="time" name="departure-H">
+                </label>
+                <label class="gestion">
+                    <span class="titulo">Código de Avión:</span>
+                    <input type="text" name="airplane">
+                </label>
+                <label class="textarea">
+                    <span class="titulo">Motivo de la Eliminación:</span>
+                    <textarea class="comentario" placeholder="Indique breve descripción de la eliminación"></textarea>
+                </label>
+            <div class="buttons">
+                <button class="bGestion" type="submit">Eliminar</button>
+                <button class="bAtras">
+                    <a href="Home.html" class="bLink">Atras</a>
+                </button>
             </div>
-        </div>
-    </body>
+        </form>
+    </main>
 
 </body>
-
 </html>

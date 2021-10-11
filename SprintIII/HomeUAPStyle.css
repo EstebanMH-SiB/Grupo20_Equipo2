@@ -45,6 +45,20 @@
     color: var(--Tangerine);
 }
 
+.menu-link span {
+    font-size: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    margin: -8px 0px 0px -50px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: -12px;
+    width: 30pt;
+    height: auto;
+}
+
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
@@ -56,60 +70,41 @@ main::after {
     clear: both;
 }
 
-.reservarVuelo {
-    background-color: var(--Lapizlazuli);
-    padding: 10px 13%;
-}
-
-.titulo, .tituloP {
-    color: var(--MintCream);
-    font-size: 10px;
-}
-
-.form {
+.gestionesUso {
     display: flex;
-    margin: 5px 10px 10px 10px;
-    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.org-des {
+.gestion {
+    background-color: var(--CaputMortuum);
+    border-radius: 30px;
+    margin: 50px 100px 50px 0px;
+}
+
+.gestion-p {
+    background-color: var(--CaputMortuum);
+    border-radius: 30px;
+    margin: 50px 0px;
+}
+
+.gestion a, .gestion-p a {
     display: flex;
-    margin-bottom: 10px;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: var(--Tangerine); 
 }
 
-.funcion {
-    display: flex;
+.gestion a span, .gestion-p a span {
+    
+    padding-bottom: 15px;
 }
 
-.personas {
-    color: var(--MintCream);
-    padding-left: 5px;
-}
-
-input {
-    border-radius: 10px;
-    border: none;
-    color: var(--CaputMortuum);
-    padding-left: 10px;
-}
-
-.reservar {
-    margin-left: 30px;
-}
-
-.org span, .tituloP {
-    padding: 24px;
-}
-
-button {
-    background-color: var(--Tangerine);
-    color: var(--MintCream);
-    margin-left: 30px;
-    border: none;
-    border-radius: 50px;
-    padding: 0px 50px;
-    font-family: var(--font-monserrat);
-    font-size: 14px;
+.gestion img, .gestion-p img {
+    width: 130px;
+    height: auto;
 }
 
 h1 {
@@ -126,11 +121,6 @@ h1 {
     margin-left: -25px;
     font-size: 85px;
     color: var(--Lapizlazuli)
-}
-
-h2 {
-    margin: 0px 10px;
-    color: var(--MintCream);
 }
 
 h3 {
@@ -173,7 +163,7 @@ p {
 }
 
 .comentarios div.user{
-    color: var(--MintCream);;
+    color: var(--MintCream);
     margin: 10px 10px;
     display: flex;
     flex-direction: column;

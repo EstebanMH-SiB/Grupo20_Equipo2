@@ -40,51 +40,73 @@
     color: var(--Tangerine);
 }
 
+.menu-link span {
+    font-size: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    margin: -8px 0px 0px -50px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: -12px;
+    width: 30pt;
+    height: auto;
+}
+
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
     color: var(--EerieBlack);
 }
 
-.registrarUsuario, .form {
+.crearVuelo, .form {
     display: flex;
     flex-direction: column;
 }
 
-.ns {
+.od {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;   
+    margin-right: 68px;   
 }
 
-.name-sur {
+.org-des {
     display: flex;
 }
 
-.registrarUsuario, .group {
+.crearVuelo, .airplane {
     float: left;
     width: 50%;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 
-.group {
+.airplane {
     margin-top: 90px;
     margin-left: 130px;
     width: 540px;
     height: auto;
 }
 
-.registrarUsuario {
-    margin-top: 80px;
+.crearVuelo {
+    margin-top: 110px;
 }
 
-.registrar {
+.crear {
     padding-top: 10px;
 }
 
-.registrar input, .registrar-b input {
-    width: 35%;
+.crear {
+    padding-top: 5px;
+}
+
+.crear input, .crear-b input {
+    width: 47%;
+}
+
+.od input {
+    width: 105%;
 }
 
 input {
@@ -94,21 +116,9 @@ input {
     font-family: var(--font-hind);
 }
 
-.eye {
-    position:absolute;
-    margin-top: 4px;
-    margin-left: -32px;
-}
-
 .warning {
     font-size: 10px;
     color: var(--Tangerine);
-    padding-top: 5px;
-}
-
-.requisitos {
-    font-size: 10px;
-    color: var(--CaputMortuum);
     padding-top: 5px;
 }
 
@@ -129,7 +139,7 @@ h1 {
     align-items: center;
 }
 
-.bRegistrar {
+.bCrear {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
@@ -144,30 +154,9 @@ h1 {
     padding: 10px 40px;
 }
 
-.bLink, .bRegistrar {
+.bLink, .bCrear {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;
     color: var(--MintCream);
-}
-
-.checkbox {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.checkbox label {
-    padding: 5px;
-}
-
-.T-C{
-    text-decoration: none;
-    font-size: bold;
-    color: var(--EerieBlack);
-}
-
-.T-C:hover {
-    color: var(--Tangerine);
-    text-decoration: underline;
 }

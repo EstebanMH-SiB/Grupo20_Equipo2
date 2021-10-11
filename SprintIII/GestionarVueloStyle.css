@@ -40,64 +40,100 @@
     color: var(--Tangerine);
 }
 
+.menu-link span {
+    font-size: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    margin: -8px 0px 0px -50px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: -12px;
+    width: 30pt;
+    height: auto;
+}
+
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
     color: var(--EerieBlack);
 }
 
-.registrarUsuario, .form {
+.gestionarVuelo, .form {
     display: flex;
     flex-direction: column;
 }
 
-.ns {
+h1 {
+    color: var(--Tangerine);
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    color: var(--EerieBlack);
+    margin-top: 0px;
+    margin-bottom: 26.800px;
+    padding-right: 5px;
+}
+
+.vuelo {
+    display: flex;
+    flex-direction: row;
+}
+
+.od {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;   
+    margin-right: 68px;   
 }
 
-.name-sur {
+.org-des {
     display: flex;
 }
 
-.registrarUsuario, .group {
+.gestionarVuelo, .airplane {
     float: left;
     width: 50%;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 
-.group {
+.airplane {
     margin-top: 90px;
     margin-left: 130px;
     width: 540px;
     height: auto;
 }
 
-.registrarUsuario {
-    margin-top: 80px;
+.gestionarVuelo {
+    margin-top: 120px;
 }
 
-.registrar {
+.gestion, .textarea {
     padding-top: 10px;
 }
 
-.registrar input, .registrar-b input {
-    width: 35%;
+.gestion input {
+    width: 47%;
 }
 
-input {
+.textarea {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.od input {
+    width: 105%;
+}
+
+input, textarea {
     border-radius: 10px;
     padding: 3px 10px;
     border-color: var(--Lapizlazuli);
     font-family: var(--font-hind);
-}
-
-.eye {
-    position:absolute;
-    margin-top: 4px;
-    margin-left: -32px;
 }
 
 .warning {
@@ -106,19 +142,8 @@ input {
     padding-top: 5px;
 }
 
-.requisitos {
-    font-size: 10px;
-    color: var(--CaputMortuum);
-    padding-top: 5px;
-}
-
 .titulo {
     font-weight: bold;
-}
-
-h1 {
-    color: var(--Tangerine);
-    font-size: 40px;
 }
 
 .buttons {
@@ -129,7 +154,7 @@ h1 {
     align-items: center;
 }
 
-.bRegistrar {
+.bGestion {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
@@ -144,30 +169,9 @@ h1 {
     padding: 10px 40px;
 }
 
-.bLink, .bRegistrar {
+.bLink, .bGestion {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;
     color: var(--MintCream);
-}
-
-.checkbox {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.checkbox label {
-    padding: 5px;
-}
-
-.T-C{
-    text-decoration: none;
-    font-size: bold;
-    color: var(--EerieBlack);
-}
-
-.T-C:hover {
-    color: var(--Tangerine);
-    text-decoration: underline;
 }

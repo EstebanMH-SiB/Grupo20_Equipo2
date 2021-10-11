@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="icon" type="svg" href="../../icons/Logo.svg">
-    <link rel="stylesheet" type="text/css" href="../css/RegistrarStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/ARegistrarStyle.css">
 </head>
 <body>
     
@@ -15,25 +15,32 @@
             <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
         </a>
         <nav class="menu">
-            <a href="Home.html" class="menu-link">Inicio</a>
-            <a href="Login.html" class="menu-link">Ingresar</a>
-            <a href="RegistroUsuario.html" class="menu-link">Registrar</a>
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link">
+                Name Surname
+                <img src="../../icons/user.svg" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
         </nav>
     </header>
 
+
     <main>
         <img src="../../icons/group.svg" alt="group.svg"class="group">
-        <form class="registrarUsuario" method="GET" action="">
+        <form class="registrarUsuario" method="GET" action="" onsubmit="validar_formulario()">
             <h1>Registrarse</h1>
             <div class="form">
                 <div class="name-sur">
                     <label class="ns">
                         <span class="titulo">Nombres:</span>
-                        <input type="text" name="name">
+                        <input type="text" id="name">
+                        <span class="warning" id="nameWarning"></span>
                     </label>
                     <label class="ns">
                         <span class="titulo">Apellidos:</span>
                         <input type="text" name="surname">
+                        <span class="warning" id="snameWarning"></span>
                     </label>
                 </div>
                 <label class="registrar">
@@ -49,27 +56,33 @@
                     <span class="titulo">Fecha de Nacimiento:</span>
                     <input type="date" name="birthday">
                 </label>
-                <span class="pWarning" id="b-dayWarning"></span>
                 <label class="registrar">
                     <span class="titulo">Correo Electrónico:</span>
                     <input type="email" name="email" placeholder="example@correo.com">
-                </label> <span class="pWarning" id="e-Warning"></span> <br>
-                <label class="registrar">
+                </label> 
+                <span class="warning" id="e-Warning"></span>
+                <br>
+                <label class="registrar-b">
                     <span class="titulo">Usuario:</span>
-                    <input type="text" name="username">
-                </label> <span class="uWarning" id="uWarning"></span>
-                <label class="registrar">
+                    <input type="text" name="username" 
+                           onfocus="mostraruserReq('◦Tener mínimo 6 caractéres<br>◦Tener máximo 12 caractéres<br>◦Tener Números');"
+                           onblur="mostraruserReq('')">
+                </label> 
+                <span class="warning" id="uWarning"></span> <span class="requisitos" id="uReq"></span>
+                <label class="registrar-b">
                     <span class="titulo">Contraseña:</span>
-                    <input type="password" name="password">
+                    <input type="password" name="password"
+                           onfocus="mostrarpReq('◦Tener mínimo 8 caractéres<br>◦Tener máximo 12 caractéres<br>◦Tener Números<br>Tener Mayúsculas y Minúsculas');"
+                           onblur="mostrarpReq('')">
                     <img src="../../icons/eyeO.svg" alt="ver" class="eye">
-                </label>
-                <span class="pWarning" id="pWarning"></span>
-                <label for="" class="registrar">
+                </label> 
+                <span class="warning" id="pWarning"></span> <span class="requisitos" id="pReq"></span>
+                <label class="registrar-b">
                     <span class="titulo">Confirmar Contraseña:</span>
                     <input type="password" name="pconfirmation">
                     <img src="../../icons/eyeO.svg" alt="ver" class="eye">
-                </label>
-                <span class="pcWarning" id="pcWarning"></span>
+                </label> 
+                <span class="warning" id="pcWarning"></span>
                 <label class="registrar">
                     <span class="titulo">Tipo de Usuario:</span>
                     <select name="userType">
@@ -89,4 +102,5 @@
     </main>
 
 </body>
+<script type="text/javascript" src="../js/RUsuarioScript.js"></script>
 </html>

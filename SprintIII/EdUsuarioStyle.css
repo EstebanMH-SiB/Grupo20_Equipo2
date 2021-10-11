@@ -40,13 +40,27 @@
     color: var(--Tangerine);
 }
 
+.menu-link span {
+    font-size: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    margin: -8px 0px 0px -50px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: -12px;
+    width: 30pt;
+    height: auto;
+}
+
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
     color: var(--EerieBlack);
 }
 
-.registrarUsuario, .form {
+.editarUsuario, .form {
     display: flex;
     flex-direction: column;
 }
@@ -54,37 +68,44 @@ body {
 .ns {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;   
+    margin-right: 68px;   
 }
 
 .name-sur {
     display: flex;
 }
 
-.registrarUsuario, .group {
+.editarUsuario, .user {
     float: left;
     width: 50%;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 
-.group {
-    margin-top: 90px;
-    margin-left: 130px;
-    width: 540px;
+.user {
+    margin-top: 120px;
+    margin-left: 160px;
+    padding: 10px;
+    width: 460px;
     height: auto;
+    border-radius: 100%;
 }
 
-.registrarUsuario {
-    margin-top: 80px;
+.editarUsuario {
+    margin-top: 110px;
+    margin-left: 20px;
 }
 
 .registrar {
     padding-top: 10px;
 }
 
-.registrar input, .registrar-b input {
-    width: 35%;
+.registrar input {
+    width: 40%;
+}
+
+.ns input {
+    width: 105%;
 }
 
 input {
@@ -129,12 +150,16 @@ h1 {
     align-items: center;
 }
 
-.bRegistrar {
+.bEditar, .bCambiarP {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
     padding: 10px 40px;
     color: var(--MintCream);
+}
+
+.bCambiarP {
+    width: 465px;
 }
 
 .bAtras {
@@ -144,30 +169,9 @@ h1 {
     padding: 10px 40px;
 }
 
-.bLink, .bRegistrar {
+.bLink, .bEditar, .bCambiarP {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;
     color: var(--MintCream);
-}
-
-.checkbox {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.checkbox label {
-    padding: 5px;
-}
-
-.T-C{
-    text-decoration: none;
-    font-size: bold;
-    color: var(--EerieBlack);
-}
-
-.T-C:hover {
-    color: var(--Tangerine);
-    text-decoration: underline;
 }
