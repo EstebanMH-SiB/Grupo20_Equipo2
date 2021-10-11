@@ -16,22 +16,55 @@
     --font-hind: 'Hind', sans-serif;
 }
 
-.page-head {
-    background-color: var(--Lapizlazuli);
+.page-head {   
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 186.1px;
-    
+    padding: 10px 186.1px;    
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
 }
 
-.banner {
-    margin-top: 74px;
-    margin-bottom: 0px;
+
+.slider{    
+    width: 100%;
+    margin:auto; 
+    overflow: hidden;   
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider banner{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}    
 }
 
 .menu-link {
@@ -39,6 +72,10 @@
     text-decoration: none;
     padding-left: 50px;
     font-family: var(--font-abadi);
+}
+
+.menu i{
+    padding: 5px;
 }
 
 .menu-link:hover {
@@ -57,11 +94,13 @@ main::after {
 }
 
 .reservarVuelo {
-    background-color: var(--Lapizlazuli);
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
     padding: 10px 13%;
+  
 }
 
-.titulo, .tituloP {
+.titulo {
     color: var(--MintCream);
     font-size: 10px;
 }
@@ -89,7 +128,7 @@ main::after {
 input {
     border-radius: 10px;
     border: none;
-    color: var(--CaputMortuum);
+    color: #58201D;
     padding-left: 10px;
 }
 
@@ -97,7 +136,7 @@ input {
     margin-left: 30px;
 }
 
-.org span, .tituloP {
+.org span {
     padding: 24px;
 }
 
@@ -110,6 +149,10 @@ button {
     padding: 0px 50px;
     font-family: var(--font-monserrat);
     font-size: 14px;
+}
+
+button:hover{
+    background-color:#ff9616;
 }
 
 h1 {
@@ -173,7 +216,7 @@ p {
 }
 
 .comentarios div.user{
-    color: var(--MintCream);;
+    color: #EBF4ED;
     margin: 10px 10px;
     display: flex;
     flex-direction: column;

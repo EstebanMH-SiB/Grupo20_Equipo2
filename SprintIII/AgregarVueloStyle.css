@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+
+.page-head {
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+.menu i{
+    padding: 5px;
+}
+
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+}
+
+.CreaVuelos, .avion {
+    float: left;
+    width: 40%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.avion {
+    margin-top: 40px;
+    margin-left: 130px;
+    width: 540px;
+    height: auto;    
+    filter: drop-shadow(10px 10px 10px #000) ;
+    
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+.Encabezados {
+    border-style: none;
+    border-width: 0px;
+    line-height: 30px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: var(--Tangerine);
+    font-size: 40px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bCrear {
+    background-color: var(--Lapizlazuli);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 50px;
+    color: var(--MintCream);
+}
+
+.bCrear:hover{
+    background-color: #068dee
+
+}
+
+.bAtras {
+    background-color: var(--CaputMortuum);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
+}
+
+.bAtras, .bCrear{
+    text-decoration: none;
+    font-family: var(--font-monserrat);
+    font-size: bold;
+    color: var(--MintCream);
+}

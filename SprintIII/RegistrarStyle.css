@@ -17,7 +17,8 @@
 }
 
 .page-head {
-    background-color: var(--Lapizlazuli);
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +39,10 @@
 
 .menu-link:hover {
     color: var(--Tangerine);
+}
+
+.menu i{
+    padding: 5px;
 }
 
 body {
@@ -72,7 +77,9 @@ body {
     margin-top: 90px;
     margin-left: 130px;
     width: 540px;
-    height: auto;
+    height: auto;    
+    filter: drop-shadow(10px 10px 10px #000) ;
+    
 }
 
 .registrarUsuario {
@@ -83,7 +90,7 @@ body {
     padding-top: 10px;
 }
 
-.registrar input, .registrar-b input {
+.registrar input {
     width: 35%;
 }
 
@@ -98,18 +105,6 @@ input {
     position:absolute;
     margin-top: 4px;
     margin-left: -32px;
-}
-
-.warning {
-    font-size: 10px;
-    color: var(--Tangerine);
-    padding-top: 5px;
-}
-
-.requisitos {
-    font-size: 10px;
-    color: var(--CaputMortuum);
-    padding-top: 5px;
 }
 
 .titulo {
@@ -137,11 +132,20 @@ h1 {
     color: var(--MintCream);
 }
 
+.bRegistrar:hover{
+    background-color: #068dee
+
+}
+
 .bAtras {
     background-color: var(--CaputMortuum);
     border: none;
     border-radius: 50px;
     padding: 10px 40px;
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
 }
 
 .bLink, .bRegistrar {

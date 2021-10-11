@@ -17,7 +17,8 @@
 }
 
 .page-head {
-    background-color: var(--Lapizlazuli);
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +39,10 @@
 
 .menu-link:hover {
     color: var(--Tangerine);
+}
+
+.menu i{
+    padding: 5px;
 }
 
 body {
@@ -68,6 +73,7 @@ body {
     margin-left: 150px;
     width: 500px;
     height: auto;
+    filter: drop-shadow(10px 10px 10px #000) ;
 }
 
 h1 {
@@ -97,6 +103,10 @@ input {
     margin-bottom: 20px;
 }
 
+.log-link:hover{
+   color: #9c3a35;
+}
+
 .bellow {
     margin-top: 10px;
     display: flex;
@@ -111,11 +121,19 @@ input {
     padding: 10px 40px;
 }
 
+.bLogin:hover{
+    background-color: #068dee;
+}
+
 .bAtras {
     background-color: var(--CaputMortuum);
     border: none;
     border-radius: 50px;
     padding: 10px 40px;
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
 }
 
 .bLink, .bLogin {

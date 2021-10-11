@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aeropuerto Juan Casiano</title>
-        <link rel="icon" type="svg" href="../../icons/Logo.svg">
-        <link rel="stylesheet" type="text/css" href="../css/HomeStyle.css">
-    </head>
-    <body>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Juan Casiano</title>
+    <link rel="icon" type="svg" href="icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="HomeStyle.css">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
     <header class="page-head">
         <a href="Home.html" class="logo">
-            <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+            <img src="icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
         </a>
         <nav class="menu">
-        <a href="Home.html" class="menu-link">Inicio</a>
-        <a href="Login.html" class="menu-link">Ingresar</a>
-        <a href="RegistroUsuario.html" class="menu-link">Registrar</a>
-    </nav>
+            <a href="Home.html" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
+            <a href="Login.html" class="menu-link"><i class="fas fa-solid fas fa-sign-in-alt"></i>Ingresar</a>
+            <a href="RegistroUsuario.html" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
     </header>
 
     <main>
-        <img class="banner" src="../../Images/Banner.png" 
-             alt="Banner" height="auto" width="100%">
+        <div class="slider">
+            <ul>
+                <li> <img class="banner" src="imagenes/Banner.png" alt="Banner" height="120%" width="100%"></li>
+                <li> <img class="banner2" src="imagenes/Banner2.png" alt="Banner" height="120%" width="100%"></li>
+                <li> <img class="banner3" src="imagenes/Banner3.png" alt="Banner" height="120%" width="100%"></li>
+                <li> <img class="banner4" src="imagenes/Banner4.png" alt="Banner" height="120%" width="100%"></li>
+            </ul>
+        </div>       
         <form class="reservarVuelo" method="GET" action="">
            <h2> Reserva Tu Vuelo</h2>
            <div class="form">
@@ -31,14 +38,14 @@
                         <label class="org">
                                 <span class="titulo">O R I G E N</span>
                                 <div class="funcion">
-                                    <img src="../../icons/search.svg" alt="" width="24px" height="24px">
+                                    <img src="icons/search.svg" alt="" width="24px" height="24px">
                                     <input type="text" class="origen" name="origen">
                                 </div>
                         </label>
                         <label class="org">
                                 <span class="titulo">D E S T I N O</span>
                                 <div class="funcion">
-                                    <img src="../../icons/search.svg" alt="" width="24px" height="24px">
+                                    <img src="icons/search.svg" alt="" width="24px" height="24px">
                                     <input type="text" class="destino" name="destino">
                                 </div>
                         </label>
@@ -50,10 +57,10 @@
                         </div>
                 </label>
                 <label class="reservar">
-                    <span class="tituloP">P E R S O N A S</span>
+                    <span class="titulo">P E R S O N A S</span>
                     <div class="funcion">
-                        <img src="../../icons/user.svg" alt="" width="24px" height="24px">
-                        <input type="number" name="persona" class="persona" value="1" min="1" max="99">
+                        <img src="icons/user.svg" alt="" width="24px" height="24px">
+                        <input type="number" name="persona" class="persona" min="1" max="99">
                         <span class="personas">personas</span>
                         </div>
                 </label>
@@ -65,8 +72,8 @@
             <h1>¿Quiénes <span class="h1">Somos?</span></h1>
             <p>
                 El Aeropuerto Juan Casiano Solís es la terminal aérea que sirve al municipio de Guapi en el 
-                departamento de Cauca ubicado al sur occidente de Colombia. En él sólo llega operación comercial 
-                por parte de la aerolínea estatal Satena y vuelo chárter por las aerolíneas EasyFly.<br>
+                departamento de Cauca ubicado al sur occidente de Colombia. En él sólo llega operación 
+                comercial por parte de la aerolínea estatal Satena y vuelo chárter por las aerolíneas EasyFly.<br>
                 El municipio más importante del litoral caucano, cuna de manifestaciones culturales únicas. 
                 El aire que se respira tiene mucho de selva, mucho de río y otro tanto de mar. Una mirada 
                 detenida sobre el paisaje nos permite descubrir que, el río ancho de aguas caramelo que sirve 
@@ -75,7 +82,7 @@
                 asciende y desciende en intervalos. Es una de las regiones que registra mayor pluviosidad en 
                 el mundo.
             </p>
-            <img src="../../Images/GUAPI.jpg" alt="Juan Casiano" width="100%" height="auto">
+            <img src="Images/GUAPI.jpg" alt="Juan Casiano" width="100%" height="auto">
             <h3 class="article">Misión</h3>
             <p class="mision">
                 El Aeropuerto Juan Casiano tiene como misión servirle al país y brindarle el servicio y el
@@ -97,7 +104,7 @@
             <section>
                 <h3 class="aside">Comentarios</h3>
                 <div class="comentarios">
-                    <img src="../../Images/placeholder-square.jpg" alt="foto">
+                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
                     <div class="user">    
                         <div class="userName">User User</div>
                         <div>La comodidad de las sillas, y la rapidez del personal para
@@ -106,7 +113,7 @@
                     </div>
                 </div>
                 <div class="comentarios">
-                    <img src="../../Images/placeholder-square.jpg" alt="foto">
+                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
                     <div class="user">    
                         <div class="userName">User User</div>
                         <div>La comodidad de las sillas, y la rapidez del personal para
@@ -115,7 +122,7 @@
                     </div>
                 </div>
                 <div class="comentarios">
-                    <img src="../../Images/placeholder-square.jpg" alt="foto">
+                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
                     <div class="user">    
                         <div class="userName">User User</div>
                         <div>La comodidad de las sillas, y la rapidez del personal para
