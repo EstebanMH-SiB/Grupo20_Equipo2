@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="text/javascript" src="codigojava.js"></script>
+    <title>Edición de vuelos</title>
+    <link rel="icon" type="svg" href="icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="EditarVueloStyle.css">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="Home.html" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
+            <a href="Login.html" class="menu-link"><i class="fas fa-solid fas fa-sign-in-alt"></i>Ingresar</a>
+            <a href="RegistroUsuario.html" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="imagenes/avionmedio.png" alt="avion" class="avion"/>
+        
+        <form class="EdiVuelos" method="GET" action="">         
+            <h1 class="titulos">Edición de vuelos</h1>            
+            
+
+                <div class="agrupados">
+                    <label class="titulo">Código del vuelo:</label>
+                    <input id="txtcodigoVuelo" type="text" name="codigoVuelo" placeholder="ID vuelo" title="codigoVuelo" class="camposTexto"/>
+                    <br><br>
+                    <label class="titulo">Código del avión:</label>
+                    <input id="txtcodigoAvion" type="text" name="codigoAvion" placeholder="ID vuelo" title="codigoAvion"
+                        class="camposTexto" />
+                    <br><br>
+                    <label class="titulo">Código del piloto:</label>
+                    <input class="camposTexto" id="txtcodigoPiloto" type="text" name="txtcodigoPiloto"
+                        placeholder="ID Piloto" title="codigoPiloto" />
+                        <br><br>
+                    <label class="titulo">Ciudad de origen:</label>
+                    <input id="txtciudadOrigen" type="text" name="usuario" placeholder="Ciudad de origen"
+                        title="ciudadOrigen" class="camposTexto" />
+                    <br><br>
+                    <label class="titulo">Ciudad de destino:</label>
+                    <input class="camposTexto" id="txtciudadDestino" type="text" name="ciudadDestino"
+                        placeholder="Ciudad de destino" title="apellidos" />
+                    <br><br>
+                    <label class="titulo">Fecha de salida:</label>
+                    <input class="camposTexto" type="date" id="birthday" name="nacimiento">
+                    <br><br>
+
+                    <label class="titulo">Hora de salidad:</label>
+                    <input class="camposTexto" id="txthoraSalida" type="time" name="horaSalida" placeholder="00:00"
+                        title="horaSalida" />
+                    <br><br>
+
+
+                </div>
+                <br><br>
+                <div class="agrupados">
+                    <input class="bEditar" type="submit" value="Editar">
+                    <input class="bAtras" type="submit" value="Atras">
+                </div>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

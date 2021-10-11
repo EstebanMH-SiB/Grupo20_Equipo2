@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="icon" type="svg" href="icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="LoginStyle.css">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="Home.html" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
+            <a href="Login.html" class="menu-link"><i class="fas fa-solid fas fa-sign-in-alt"></i>Ingresar</a>
+            <a href="RegistroUsuario.html" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="icons/user+.svg" alt="user+.svg" class="user"/>
+        <form class="logUsuario" method="GET" action="">
+            <h1>Ingresar</h1>
+            <div class="form">
+                <label class="ns">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" name="userName">
+                </label>
+                <label class="ns">
+                    <span class="titulo">Contraseña:</span>
+                    <input type="password" name="password">
+                    <img src="icons/eyeO.svg" alt="ver" class="eye">
+                </label>
+            </div>
+            <div class="links">
+                <a href="RecuperarContraseña.html" class="log-link">¿Olvidaste Tu Contraseña?</a>
+                <button class="bLogin" type="submit">Ingresar</button>
+                <div class="bellow">
+                    <a href="RegistroUsuario.html" class="log-link">No Estoy Registrado</a>
+                    <button class="bAtras">
+                        <a href="Home.html" class="bLink">Atras</a>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
