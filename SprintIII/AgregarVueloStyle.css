@@ -64,7 +64,7 @@ body {
     margin-left: 130px;
     width: 540px;
     height: auto;    
-    filter: drop-shadow(10px 10px 10px #000) ;
+    filter: (5px 5px 5px rgb(26, 25, 25));
     
 }
 
