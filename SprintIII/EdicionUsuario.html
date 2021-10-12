@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="icon" type="svg" href="icons/Logo.svg">
-    <link rel="stylesheet" type="text/css" href="css/RegistrarStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/EditarStyle.css">
 </head>
 <body>
     
@@ -23,8 +23,8 @@
 
     <main>
         <img src="icons/group.svg" alt="group.svg"class="group">
-        <form class="registrarUsuario" method="GET" action="">
-            <h1>Registrarse</h1>
+        <form class="EditarUsuario" method="GET" action="">
+            <h1>Edición de Usuario</h1>
             <div class="form">
                 <div class="name-sur">
                     <label class="ns">
@@ -36,7 +36,23 @@
                         <input type="text" name="surname">
                     </label>
                 </div>
-                <label class="registrar">
+                
+                    <label class="editar">
+                    <span class="tituloid">Tipo de Documento:</span>
+                    <select name="ns">
+                        <option value="" selected>--Seleciona tipo de documento--</option>
+                        <option value="cedula">Cedula</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="cc extranjeria">Cedula de Extranjería</option>
+                    </select>
+                    </label>
+                    <label class="editar">
+                        <span class="titulo">Cedula:</span>
+                        <input type="interger" name="cc">
+                    </label>
+                    
+                
+                <label class="editar">
                     <span class="titulo">Sexo:</span>
                     <select name="sex">
                         <option value="" selected>--Seleciona tu sexo--</option>
@@ -45,42 +61,22 @@
                         <option value="null">Prefiero no decir</option>
                     </select>
                 </label>
-                <label class="registrar">
+                <label class="editar">
                     <span class="titulo">Fecha de Nacimiento:</span>
                     <input type="date" name="birthday">
                 </label>
                 <span class="pWarning" id="b-dayWarning"></span>
-                <label class="registrar">
+                <label class="editar">
                     <span class="titulo">Correo Electrónico:</span>
                     <input type="email" name="email" placeholder="example@correo.com">
-                </label> <span class="pWarning" id="e-Warning"></span> <br>
-                <label class="registrar">
+                </label> <span class="pWarning" id="e-Warning"></span> 
+                <label class="editar">
                     <span class="titulo">Usuario:</span>
                     <input type="text" name="username">
                 </label> <span class="uWarning" id="uWarning"></span>
-                <label class="registrar">
-                    <span class="titulo">Contraseña:</span>
-                    <input type="password" name="password">
-                    <img src="icons/eyeO.svg" alt="ver" class="eye">
-                </label>
-                <span class="pWarning" id="pWarning"></span>
-                <label for="" class="registrar">
-                    <span class="titulo">Confirmar Contraseña:</span>
-                    <input type="password" name="pconfirmation">
-                    <img src="icons/eyeO.svg" alt="ver" class="eye">
-                </label>
-                <span class="pcWarning" id="pcWarning"></span>
-                <label class="registrar">
-                    <span class="titulo">Tipo de Usuario:</span>
-                    <select name="userType">
-                        <option value="superadministrador">Administrador</option>
-                        <option value="usuario" selected>Usuario</option>
-                        <option value="piloto">Piloto</option>
-                    </select>
-                </label>
             </div>
             <div class="buttons">
-                <button class="bRegistrar" type="submit">Registrarse</button>
+                <button class="bEditar" type="submit">Editar</button>
                 <button class="bAtras">
                     <a href="Home.html" class="bLink">Atras</a>
                 </button>
