@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="icon" type="svg" href="icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="ComentarioVueloStyle.css">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="Home.html" class="menu-link"><i class= "fab fa-avianex"></i>Consulta de Vuelo</a>
+            <a href="Login.html" class="menu-link"><i class="fas fa-solid fas fa-comments"></i>Comentarios de vuelo</a>
+            <a href="RegistroUsuario.html" class="menu-link"><i class="fas fa-solid fas fa-globe-americas"></i>Reservar vuelos</a>
+            <a href="RegistroUsuario.html" class="menu-link"><i class="fas fa-solid fas fa-portrait"></i>Nombre Usuario</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <form class="Comentarios" method="GET" action="">            
+            <div class="form">
+                
+                <div class="rating">
+                    <span class="ns">
+                        <span class="titulo">Espacio para las piernas:
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star2"><label for="star2"></label>
+                            <input type="radio" name="star" id="star3"><label for="star3"></label>
+                            <input type="radio" name="star" id="star4"><label for="star4"></label>
+                            <input type="radio" name="star" id="star5"><label for="star5"></label>
+                        </span>                        
+                    </span> 
+                </div>
+
+                
+
+                
+                <label class="titulo">Dejanos tus Comentarios</label>
+                <textarea>Nos interesa lo que piensas</textarea>
+            </div>
+            
+            <div class="buttons">
+                <button class="bRegistrar" type="submit">Registrarse</button>
+                <button class="bAtras">
+                    <a href="Home.html" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
