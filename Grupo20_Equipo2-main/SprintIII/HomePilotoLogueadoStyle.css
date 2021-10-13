@@ -255,20 +255,22 @@ p {
 .Opciones{
     display: inline-block;
     background-color: #F18B12;
-    width: 24%;
+    width: 45%;
     height: 450px;
-    margin-left: 0%;  
-    padding: 0% 0%;  
+    margin-left: 20px;  
+    margin-right: 20px;
+    padding: 0;  
     filter: drop-shadow(10px 10px 10px #000); 
     z-index: 10;
     align-items: center;
     border-radius: 6px;
     cursor: pointer;
+    
 }
 
 #Opcion1{
-    background-image: url(imagenes/ConsultarVuelo.png);
-    background-size: 100% 500px;
+    background-image: url(imagenes/Itinerario.jpg);
+    background-size: cover;
     border: 2px solid rgb(3,161,251) ;
     align-items: center; 
     position: relative;
@@ -279,7 +281,7 @@ p {
     position: absolute;
     padding: 0;
     margin: 10px;
-    margin-top:50%;
+    margin-top:35%;
     margin-left: 15%;
     
 }
@@ -289,11 +291,12 @@ p {
 }
 
 #Opcion2{
-    background-image: url(imagenes/ComentarioVuelo2.jpg);
+    background-image: url(imagenes/InformacionPiloto.jpg);
     background-color: rgb(3,161,251);
-    background-size: 100%;
+    background-size: cover;
     border: 2px solid rgb(3,161,251) ;
     position: relative;
+    
     
     
 }

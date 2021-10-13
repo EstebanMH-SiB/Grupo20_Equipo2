@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+.page-head {
+    background-color: var(--Lapizlazuli);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+}
+
+.eUsuario, .user {
+    float: left;
+    width: 50%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.eUsuario {
+    margin-top: 110px;
+}
+
+.ns{
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    margin-bottom: 20px;
+}
+
+.user {
+    margin-top: 120px;
+    margin-left: 150px;
+    width: 500px;
+    height: auto;
+}
+
+h1 {
+    color: var(--Tangerine);
+    font-size: 40px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
+.links {
+    margin-top: 10px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bBorrar {
+    background-color: var(--Lapizlazuli);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 40px;
+}
+
+.bAtras {
+    background-color: var(--CaputMortuum);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.bBorrar, .bLink {
+    text-decoration: none;
+    font-family: var(--font-monserrat);
+    font-size: bold;
+    color: var(--MintCream);
+}

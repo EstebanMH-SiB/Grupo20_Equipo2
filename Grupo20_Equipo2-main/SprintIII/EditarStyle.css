@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+.page-head {
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+    color: var(--EerieBlack);
+}
+
+.EditarUsuario, .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ns {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;   
+}
+
+.name-sur {
+    display: flex;
+}
+
+.tipoid {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; 
+    padding-right: 15rem;
+}
+
+
+
+.EditarUsuario, .group {
+    float: left;
+    width: 50%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.group {
+    margin-top: 90px;
+    margin-left: 130px;
+    width: 540px;
+    height: auto;
+}
+
+.EditarUsuario {
+    margin-top: 80px;
+}
+
+.editar {
+    padding-top: 10px;
+}
+
+.editar input {
+    width: 35%;
+}
+
+input {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
+.eye {
+    position:absolute;
+    margin-top: 4px;
+    margin-left: -32px;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+.tituloid {
+    font-weight: bold;
+    padding-top: 10rem;
+}
+
+h1 {
+    color: var(--Tangerine);
+    font-size: 40px;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bEditar {
+    background-color: var(--Lapizlazuli);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 40px;
+    color: var(--MintCream);
+}
+
+.bAtras {
+    background-color: var(--CaputMortuum);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.bLink, .bEditar {
+    text-decoration: none;
+    font-family: var(--font-monserrat);
+    font-size: bold;
+    color: var(--MintCream);
+}
+
+.bEditar:hover{
+    background-color: #068dee
+
+}
+
+.bLink:hover{
+    background-color: #068dee
+
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
+}
+
+.checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    padding: 5px;
+}
+
+.T-C{
+    text-decoration: none;
+    font-size: bold;
+    color: var(--EerieBlack);
+}
+
+.T-C:hover {
+    color: var(--Tangerine);
+    text-decoration: underline;
+}
+
+.editarUsuario {
+    margin-top: 80px;
+}
