@@ -74,7 +74,8 @@ body {
 }
 
 .Comentarios {
-    margin-top: 80px;
+    margin-top: 6%;
+    margin-left: 30%;
 }
 
 .registrar {
@@ -92,11 +93,6 @@ input {
     font-family: var(--font-hind);
 }
 
-.eye {
-    position:absolute;
-    margin-top: 4px;
-    margin-left: -32px;
-}
 
 .titulo {
     font-weight: bold;
@@ -105,6 +101,7 @@ input {
 h1 {
     color: var(--Tangerine);
     font-size: 40px;
+    
 }
 
 .buttons {
@@ -115,7 +112,7 @@ h1 {
     align-items: center;
 }
 
-.bRegistrar {
+.bEnviar {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
@@ -123,7 +120,7 @@ h1 {
     color: var(--MintCream);
 }
 
-.bRegistrar:hover{
+.bEnviar:hover{
     background-color: #068dee
 
 }
@@ -167,48 +164,24 @@ h1 {
     text-decoration: underline;
 }
 
-
-
-.rating input{
-    display: none;
+select{
+    border: 1px solid var(--Lapizlazuli);
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+    box-shadow: 10px 10px 10px #000;
 }
 
-.rating label{
-    display: inline-block;
-    cursor: pointer;
-    width: 5px;
-    margin: 8px;
-    
-    
+textarea{
+    border: 1px solid var(--Lapizlazuli);
+    border-radius: 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+    resize: none;
+    width: 500px;
+
 }
 
-.rating label:before{
-    content: "\f005";
-    font-family: fontAwesome;
-    position: relative;
-    display: block;
-    color: #101010;
-    font-size: 20px;  
-    
-}
 
-.rating label:after{
-    content: "\f005";
-    font-family: fontAwesome;
-    position: absolute;
-    top: 14%;
-    display: block;
-    color: rgb(3,161,251); 
-    font-size: 20px;
-    opacity: 0; 
-    transition: .5s;
-    text-shadow: 0 2px 5px #000;
-}
-
-.rating label:hover:after, 
-.rating label:hover ~label:after,
-.rating input:checked ~ label:after{
-    
-    opacity: 1;
-}
 

@@ -17,7 +17,8 @@
 }
 
 .page-head {
-    background-color: var(--Lapizlazuli);
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +154,20 @@ h1 {
     color: var(--MintCream);
 }
 
+.bEditar:hover{
+    background-color: #068dee
+
+}
+
+.bLink:hover{
+    background-color: #068dee
+
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
+}
+
 .checkbox {
     margin-top: 10px;
     display: flex;
@@ -173,8 +188,6 @@ h1 {
     color: var(--Tangerine);
     text-decoration: underline;
 }
-
-
 
 .editarUsuario {
     margin-top: 80px;

@@ -23,34 +23,107 @@
         </nav>
     </header>
 
-    <main>
-        
-        <form class="Comentarios" method="GET" action="">            
-            <div class="form">
-                
-                <div class="rating">
-                    <span class="ns">
-                        <span class="titulo">Espacio para las piernas:
-                            <input type="radio" name="star" id="star1"><label for="star1"></label>
-                            <input type="radio" name="star" id="star2"><label for="star2"></label>
-                            <input type="radio" name="star" id="star3"><label for="star3"></label>
-                            <input type="radio" name="star" id="star4"><label for="star4"></label>
-                            <input type="radio" name="star" id="star5"><label for="star5"></label>
-                        </span>                        
-                    </span> 
-                </div>
+    <main>        
+        <form class="Comentarios" method="GET" action="">                 
+            <div class="form">               
+              <span class="titulo">Espacio para las piernas:
+                    <select name="rating">
+                        <option value="" selected>1:Pesimo--5:Excelente</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>                        
+                    </select>
+             </span>
+             <br>
+              <span class="titulo">Comodidad de la silla:
+                    <select name="rating">
+                        <option value="" selected>1:Pesimo--5:Excelente</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>                        
+                    </select>
+              </span>
+              <br>
+              <span class="titulo">Entretenimiento durante el vuelo:
+                <select name="rating">
+                    <option value="" selected>1:Pesimo--5:Excelente</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>                        
+                </select>
+              </span>
+              <br>
+              <span class="titulo">Experiencia a bordo:
+                <select name="rating">
+                    <option value="" selected>1:Pesimo--5:Excelente</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>                        
+                </select>
+               </span>
+               <br>
+               <span class="titulo">Atención al cliente:
+                <select name="rating">
+                    <option value="" selected>1:Pesimo--5:Excelente</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>                        
+                </select>
+               </span>
+               <br>
+               <span class="titulo">Relación precio/calidad:
+                <select name="rating">
+                    <option value="" selected>1:Pesimo--5:Excelente</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>                        
+                </select>
+                </span>
+                <br>
+                <span class="titulo">Limpieza:
+                    <select name="rating">
+                        <option value="" selected>1:Pesimo--5:Excelente</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>                        
+                    </select>
+                </span>
+                <br>
+                <span class="titulo">Check-in y embarque:
+                    <select name="rating">
+                        <option value="" selected>1:Pesimo--5:Excelente</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>                        
+                    </select>
+                </span>
+                <br>          
 
                 
-
-                
-                <label class="titulo">Dejanos tus Comentarios</label>
-                <textarea>Nos interesa lo que piensas</textarea>
+               <label class="titulo">Dejanos tus Comentarios</label>
+               <textarea>Nos interesa lo que piensas</textarea>
             </div>
             
             <div class="buttons">
-                <button class="bRegistrar" type="submit">Registrarse</button>
+                <button class="bEnviar" type="submit">Enviar</button>
                 <button class="bAtras">
-                    <a href="Home.html" class="bLink">Atras</a>
+                    <a href="HomeUsuarioLogueado.html" class="bLink">Atras</a>
                 </button>
             </div>
         </form>

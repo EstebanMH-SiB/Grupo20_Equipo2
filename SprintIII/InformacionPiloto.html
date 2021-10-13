@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edición</title>
+    <title>Información</title>
     <link rel="icon" type="svg" href="icons/Logo.svg">
     <link rel="stylesheet" type="text/css" href="EdUsuarioStyle.css">
 </head>
@@ -28,49 +28,47 @@
     <main>
         <img src="imagenes/placeholder-square.jpg" alt="user.svg" class="user">
         <form class="editarUsuario" method="GET" action="" onsubmit="">
-            <h1>Editar Usuario</h1>
+            <h1>Información del Piloto</h1>
             <div class="form">
-                <div class="name-sur">
-                    <label class="ns">
-                        <span class="titulo">Nombres:</span>
-                        <input type="text" name="name">
-                    </label>
-                    <label class="ns">
-                        <span class="titulo">Apellidos:</span>
-                        <input type="text" name="surname">
-                    </label>
-                </div>
-                <br>
-                <label class="registrar">
-                    <span class="titulo">Usuario:</span>
-                    <input type="text" name="username">
+                
+                <label class="ns">
+                    <span class="titulo">Nombres:</span>
+                    <input type="text" name="name" readonly>
                 </label>
-                <a href="CambiarContraseña.html" class="registrar">
-                    <button class="bCambiarP" type="button">Cambiar Contraseña</button>
-                </a>
-                <br>
+                <label class="ns">
+                    <span class="titulo">Apellidos:</span>
+                    <input type="text" name="surname" readonly>
+                </label>          
+                
+                <label class="registrar">
+                    <span class="titulo">Nombre de Usuario:</span>
+                    <input type="text" name="username" readonly>
+                </label>
+
+                <label class="registrar">
+                    <span class="titulo">Tipo de Usuario:</span>
+                    <input type="text" name="userTipe" readonly>
+                </label>
+                               
+                
                 <label class="registrar">
                     <span class="titulo">Sexo:</span>
-                    <select name="sex">
-                        <option value="" selected>--Seleciona tu sexo--</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="null">Prefiero no decir</option>
-                    </select>
+                    <input type="text" name="UserSex" readonly>
+                    
                 </label>
+
                 <label class="registrar">
                     <span class="titulo">Fecha de Nacimiento:</span>
-                    <input type="date" name="birthday">
+                    <input type="text" name="UserBird" readonly>
                 </label>
                 <label class="registrar">
                     <span class="titulo">Correo Electrónico:</span>
-                    <input type="email" name="email" placeholder="example@correo.com">
+                    <input type="text" name="UserEmail" readonly>
                 </label>
             </div>
-            <div class="buttons">
-                <button class="bEditar" type="submit">Editar</button>
+            <div class="buttons">                
                 <button class="bAtras">
-                    <a href="Home.html" class="bLink">Atras</a>
+                    <a href="HomePilotoLogueado.html" class="bLink">Atras</a>
                 </button>
             </div>
         </form>
