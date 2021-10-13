@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+.page-head {
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+.menu-link span {
+    font-size: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    margin: -8px 0px 0px -50px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: -12px;
+    width: 30pt;
+    height: auto;
+}
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+    color: var(--EerieBlack);
+}
+
+.reservarVuelo, .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid rgb(3,161,251);
+    border-radius: 10px;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+
+    
+}
+
+.ns {
+    display: flex;
+    flex-direction: column;
+    margin-right: 68px;   
+}
+
+.name-sur {
+    display: flex;
+    border: 1px solid rgb(3,161,251) ;
+    padding: 10px;
+    width: 130%;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+}
+
+.reservarVuelo{
+    
+    float: left;
+    width: 50%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #000;
+    
+}
+
+.reservarVuelo {
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.registrar {
+    padding-top: 10px;
+}
+
+.registrar input {
+    width: 40%;
+}
+
+.ns input {
+    width: 105%;
+}
+
+.ConsultaResuelta{
+    display: block;
+    border: 1px solid rgb(3,161,251) ;
+    padding: 10px;
+    width: 70%;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000;
+
+}
+input {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
+.Origen{
+    background: url(icons/location.svg) no-repeat scroll 2px 2px;
+}
+
+.Destino{
+    background: url(icons/location.svg) no-repeat scroll 2px 2px;
+}
+
+.warning {
+    font-size: 10px;
+    color: var(--Tangerine);
+    padding-top: 5px;
+}
+
+.requisitos {
+    font-size: 10px;
+    color: var(--CaputMortuum);
+    padding-top: 5px;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--Tangerine);
+    font-size: 40px;
+    
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.bEditar, .breservar {
+    background-color: var(--Lapizlazuli);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 40px;
+    color: var(--MintCream);
+}
+
+
+.breservar:hover{
+    background-color: #068dee
+
+}
+
+.bAtras {
+    background-color: var(--CaputMortuum);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
+}
+
+.bLink, .bEditar, .bCambiarP {
+    text-decoration: none;
+    font-family: var(--font-monserrat);
+    font-size: bold;
+    color: var(--MintCream);
+}
+
+.itinerarioTabla{
+    width: 180%;
+    border: 1px solid rgb(3,161,251) ;
+
+}
+
+th, td{
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid rgb(3,161,251) ;    
+    border-collapse: collapse;
+    
+}

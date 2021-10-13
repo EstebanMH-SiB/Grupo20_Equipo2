@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Vuelos</title>
+    <link rel="icon" type="svg" href="icons/Logo.svg">
+    <link rel="stylesheet" type="text/css" href="ReservaVueloStyle.css">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link">
+                Name Surname
+                <img src="icons/user.svg" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>     
+         
+        <form class="reservarVuelo" method="GET" action="">
+            <h1><i class="fas fa-solid fas fa-globe-americas"></i>Reserva De Vuelos</h1>
+
+            <label class="titulo">Origen</label>            
+            <input class="Origen" type="text">
+            <br>
+            <label class="titulo">Destino</label>
+            <input class="Destino" type="text">
+            <br>
+            <label class="titulo">Fecha de Salida</label>
+            <input class="Fecha" type="date">
+            <br>
+            <label class="titulo">Numero de personas</label>
+            <input class="Personas" type="number">
+
+            <div class="buttons"> 
+                <button class="breservar">Reservar</button>               
+                <button class="bAtras">
+                    <a href="HomeUsuarioLogueado.html" class="bLink">Atras</a>
+                </button>
+            </div>
+
+            
+        </form>
+    </main>
+
+</body>
+</html>
