@@ -46,51 +46,87 @@
     padding: 5px;
 }
 
-
 body {
     margin: 0pt;
     font-family: var(--font-abadi);
+    color: var(--EerieBlack);
 }
 
-.CreaVuelos, .avion {
+.crearVuelo, .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.od {
+    display: flex;
+    flex-direction: column;
+    margin-right: 68px;   
+}
+
+.org-des {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.one {
+    margin-top: -3px;
+}
+
+.crearVuelo, .airplane {
     float: left;
-    width: 40%;
-    padding: 50px 20px;
+    width: 50%;
+    padding: 0px 20px;
     box-sizing: border-box;
 }
 
-.avion {
-    margin-top: 40px;
+.airplane {
+    margin-top: 90px;
     margin-left: 130px;
     width: 540px;
-    height: auto;    
-    filter: (5px 5px 5px rgb(26, 25, 25));
-    
+    height: auto;
+    filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
+}
+
+.crearVuelo {
+    margin-top: 80px;
+}
+
+.crear {
+    padding-top: 10px;
+}
+
+.b {
+    padding-top: 0px;
+}
+
+.crear input {
+    width: 47%;
+}
+
+.od input {
+    width: 105%;
+}
+
+input {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
+.warning {
+    font-size: 10px;
+    color: var(--Tangerine);
+    padding-top: 5px;
 }
 
 .titulo {
     font-weight: bold;
 }
 
-.Encabezados {
-    border-style: none;
-    border-width: 0px;
-    line-height: 30px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
-
 h1 {
     color: var(--Tangerine);
     font-size: 40px;
-}
-
-input, textarea {
-    border-radius: 10px;
-    padding: 3px 10px;
-    border-color: var(--Lapizlazuli);
-    font-family: var(--font-hind);
 }
 
 .buttons {
@@ -105,13 +141,12 @@ input, textarea {
     background-color: var(--Lapizlazuli);
     border-radius: 50px;
     border: none;
-    padding: 10px 50px;
+    padding: 10px 40px;
     color: var(--MintCream);
 }
 
 .bCrear:hover{
-    background-color: #068dee
-
+    background-color: #068dee;
 }
 
 .bAtras {
@@ -119,13 +154,14 @@ input, textarea {
     border: none;
     border-radius: 50px;
     padding: 10px 40px;
+    font-size: 13px;
 }
 
 .bAtras:hover{
     background-color:#9c3a35;
 }
 
-.bAtras, .bCrear{
+.bAtras, .bCrear {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;

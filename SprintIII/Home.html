@@ -7,7 +7,6 @@
     <title>Aeropuerto Juan Casiano</title>
     <link rel="icon" type="svg" href="icons/Logo.svg">
     <link rel="stylesheet" type="text/css" href="HomeStyle.css">
-    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -24,43 +23,43 @@
 
     <main>
         <div class="slider">
-            <ul>
-                <li> <img class="banner" src="imagenes/Banner.png" alt="Banner" height="120%" width="100%"></li>
-                <li> <img class="banner2" src="imagenes/Banner2.png" alt="Banner" height="120%" width="100%"></li>
-                <li> <img class="banner3" src="imagenes/Banner3.png" alt="Banner" height="120%" width="100%"></li>
-                <li> <img class="banner4" src="imagenes/Banner4.png" alt="Banner" height="120%" width="100%"></li>
+            <ul class="slider">
+                <li> <img class="banner" src="images/Banner.png" alt="Banner"></li>
+                <li> <img class="banner" src="images/Banner2.png" alt="Banner"></li>
+                <li> <img class="banner" src="images/Banner4.png" alt="Banner"></li>
+                <li> <img class="banner" src="images/Banner.png" alt="Banner"></li>
             </ul>
         </div>       
-        <form class="reservarVuelo" method="GET" action="">
+        <form class="reservarVuelo" method="POST" action="">
            <h2> Reserva Tu Vuelo</h2>
            <div class="form">
                 <div class="org-des">
                         <label class="org">
-                                <span class="titulo">O R I G E N</span>
+                                <span class="titulo P">O R I G E N</span>
                                 <div class="funcion">
                                     <img src="icons/search.svg" alt="" width="24px" height="24px">
-                                    <input type="text" class="origen" name="origen">
+                                    <input type="text" class="origen" id="origen">
                                 </div>
                         </label>
                         <label class="org">
-                                <span class="titulo">D E S T I N O</span>
+                                <span class="titulo P">D E S T I N O</span>
                                 <div class="funcion">
                                     <img src="icons/search.svg" alt="" width="24px" height="24px">
-                                    <input type="text" class="destino" name="destino">
+                                    <input type="text" class="destino" id="destino">
                                 </div>
                         </label>
                     </div>
                 <label class="reservar">
                     <span class="titulo">F  E C H A</span>
                     <div class="funcion">
-                        <input type="date" class="fecha" name="fecha">
+                        <input type="date" class="fecha" id="fecha">
                         </div>
                 </label>
                 <label class="reservar">
-                    <span class="titulo">P E R S O N A S</span>
+                    <span class="titulo P">P E R S O N A S</span>
                     <div class="funcion">
                         <img src="icons/user.svg" alt="" width="24px" height="24px">
-                        <input type="number" name="persona" class="persona" min="1" max="99">
+                        <input type="number" id="persona" class="persona" min="1" max="99">
                         <span class="personas">personas</span>
                         </div>
                 </label>
@@ -82,7 +81,7 @@
                 asciende y desciende en intervalos. Es una de las regiones que registra mayor pluviosidad en 
                 el mundo.
             </p>
-            <img src="Images/GUAPI.jpg" alt="Juan Casiano" width="100%" height="auto">
+            <img src="images/GUAPI.jpg" alt="Juan Casiano" width="100%" height="auto">
             <h3 class="article">Misión</h3>
             <p class="mision">
                 El Aeropuerto Juan Casiano tiene como misión servirle al país y brindarle el servicio y el
@@ -104,7 +103,7 @@
             <section>
                 <h3 class="aside">Comentarios</h3>
                 <div class="comentarios">
-                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
+                    <img src="images/placeholder-square.jpg" alt="foto">
                     <div class="user">    
                         <div class="userName">User User</div>
                         <div>La comodidad de las sillas, y la rapidez del personal para
@@ -113,7 +112,7 @@
                     </div>
                 </div>
                 <div class="comentarios">
-                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
+                    <img src="images/placeholder-square.jpg" alt="foto">
                     <div class="user">    
                         <div class="userName">User User</div>
                         <div>La comodidad de las sillas, y la rapidez del personal para
@@ -122,7 +121,7 @@
                     </div>
                 </div>
                 <div class="comentarios">
-                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
+                    <img src="images/placeholder-square.jpg" alt="foto">
                     <div class="user">    
                         <div class="userName">User User</div>
                         <div>La comodidad de las sillas, y la rapidez del personal para
@@ -135,4 +134,7 @@
     </main>
 
 </body>
+
+<script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+
 </html>

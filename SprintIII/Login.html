@@ -8,7 +8,6 @@
     <title>Ingresar</title>
     <link rel="icon" type="svg" href="icons/Logo.svg">
     <link rel="stylesheet" type="text/css" href="LoginStyle.css">
-    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,17 +30,20 @@
             <div class="form">
                 <label class="ns">
                     <span class="titulo">Usuario:</span>
-                    <input type="text" name="userName">
+                    <input type="text" id="userName">
+                    <span class="warning" id="uWarning"></span>
                 </label>
                 <label class="ns">
                     <span class="titulo">Contraseña:</span>
-                    <input type="password" name="password">
-                    <img src="icons/eyeO.svg" alt="ver" class="eye">
-                </label>
+                    <input type="password" id="password">
+                    <img src="icons/eyeO.svg" alt="ver" class="eye" id="peye" 
+                         onmouseover="see_pword('eyeC', 'text')" onmouseleave="see_pword('eyeO', 'password')">
+                    <span class="warning" id="pWarning"></span>
+                    </label>
             </div>
             <div class="links">
                 <a href="RecuperarContraseña.html" class="log-link">¿Olvidaste Tu Contraseña?</a>
-                <button class="bLogin" type="submit">Ingresar</button>
+                <button class="bLogin" id="bLogin" type="submit">Ingresar</button>
                 <div class="bellow">
                     <a href="RegistroUsuario.html" class="log-link">No Estoy Registrado</a>
                     <button class="bAtras">
@@ -52,5 +54,8 @@
         </form>
     </main>
 </body>
+
+<script type="text/javascript" src="LoginScript.js"></script>
+<script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
 
 </html>

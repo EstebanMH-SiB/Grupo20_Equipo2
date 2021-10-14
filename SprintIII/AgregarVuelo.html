@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <script type="text/javascript" src="codigojava.js"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creación de vuelos</title>
     <link rel="icon" type="svg" href="icons/Logo.svg">
     <link rel="stylesheet" type="text/css" href="AgregarVueloStyle.css">
-    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="page-head">
         <a href="Home.html" class="logo">
-            <img src="icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+            <img src="../../icons/GuapiLogo.svg" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
         </a>
         <nav class="menu">
             <a href="Home.html" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
@@ -23,47 +21,65 @@
     </header>
 
     <main>
-        <img src="imagenes/logoavion.png" alt="Icóno de avión" class="avion"/>
-        <form class="CreaVuelos" method="GET" action="" >
-            <h1 class="titulos">Creación de vuelos</h1>            
-             
-            <div class="agrupados">
-    
-                <label class="titulo">Ciudad de origen:</label>
-                <input id="txtciudadOrigen" type="text" name="usuario" placeholder="Ciudad de origen" title="ciudadOrigen" class="camposTexto"/>
-                <br><br>
-                <label class="titulo">Ciudad de destino:</label>
-                <input class="camposTexto" id="txtciudadDestino" type="text" name="ciudadDestino" placeholder="Ciudad de destino" title="apellidos" />
-                <br><br>
-                <label class="titulo">Fecha de salida:</label>
-                <input class="camposTexto" type="date" id="birthday" name="nacimiento">
-                <br><br>
-
-                <label class="titulo">Hora de salidad:</label>
-                <input class="camposTexto" id="txthoraSalida" type="time" name="horaSalida" placeholder="00:00" title="horaSalida" />
-                <br><br>
-
-                <label class="titulo">Código del avión:</label>
-                <input id="txtcodigoAvion" type="text" name="codigoAvion" placeholder="ID avión" title="codigoAvion" class="camposTexto"/>
-                <br><br>
-                <label class="titulo">Código del vuelo:</label>
-                <input id="txtcodigoVuelo" type="text" name="codigoVuelo" placeholder="ID vuelo" title="codigoVuelo" class="camposTexto"/>
-                <br><br>
-                <label class="titulo">Nombre del piloto:</label>
-                <input class="camposTexto" id="txtnombrePiloto" type="text" name="nombrePiloto" placeholder="Nombre Piloto" title="nombrePiloto" />
-                <br><br>
-                    <label class="titulo">Código del piloto:</label>
-                <input class="camposTexto" id="txtcodigoPiloto" type="text" name="txtcodigoPiloto" placeholder="ID Piloto" title="codigoPiloto" />
-                <br><br>
-
-            </div>
-            
-            <div class="agrupados">
-                <input class="bCrear" type="submit" value="Crear">
-                <input class="bAtras" type="submit" value="Atras">
+        <img src="icons/airplane.svg" alt="Icóno de avión" class="airplane"/>
+        <form class="crearVuelo" method="GET" action="" onsubmit="validar();">
+            <h1>Crear Vuelo</h1>
+            <div class="form">
+                <label class="crear b">
+                    <span class="titulo">Código de Vuelo:</span>
+                    <input type="text" id="vuelo" placeholder="ID vuelo">    
+                </label>
+                <span class="warning" id="vWarning"></span>
+                <br>
+                <div class="org-des one">
+                    <label class="od">
+                        <span class="titulo">Origen:</span>
+                        <input type="text" id="origen" placeholder="Ciudad de origen">
+                        <span class="warning" id="orgWarning"></span>
+                    </label>
+                    <label class="od">
+                        <span class="titulo">Destino:</span>
+                        <input type="text" id="destino" placeholder="Ciudad de destino">
+                        <span class="warning" id="desWarning"></span>
+                    </label>
+                </div>
+                <label class="crear">
+                    <span class="titulo">Fecha de Salida:</span>
+                    <input type="date" id="departure-D">
+                </label>
+                <label class="crear">
+                    <span class="titulo">Hora de Salida:</span>
+                    <input type="time" id="departure-H">
+                </label>
+                <br>
+                <div class="org-des">
+                    <label class="od">
+                        <span class="titulo">Nombre del Piloto:</span>
+                        <input type="text" id="pilotName" placeholder="Nombre Piloto">
+                        <span class="warning" id="npWarning"></span>
+                    </label>
+                    <label class="od">
+                        <span class="titulo">Código de Piloto:</span>
+                        <input type="text" id="pilotID" placeholder="ID Piloto">
+                        <span class="warning" id="cpWarning"></span>
+                    </label>
+                </div>
+                <br>
+                <label class="crear b">
+                    <span class="titulo">Código de Avión:</span>
+                    <input type="text" id="airplane" placeholder="ID avión">
+                </label>    
+                <span class="warning" id="capWarning"></span>
+            <div class="buttons">
+                <button class="bCrear" id="bCrear" type="submit">Crear</button>
+                <a href="Home.html" class="bAtras">Atras</a>    
             </div>
         </form>
     </main>
     
 </body>
+
+<script type="text/javascript" src="AgregarVueloScript.js"></script>
+<script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+
 </html>

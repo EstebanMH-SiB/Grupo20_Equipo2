@@ -16,13 +16,13 @@
     --font-hind: 'Hind', sans-serif;
 }
 
-.page-head {
+.page-head {   
     background: rgb(3,161,251);
     background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 186.1px;
+    padding: 10px 186.1px;    
     
     position: fixed;
     top: 0px;
@@ -59,7 +59,11 @@ body {
 .ns {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;   
+    margin-right: 40px;   
+}
+
+.ns input{
+    width: 100%;
 }
 
 .name-sur {
@@ -77,24 +81,27 @@ body {
     margin-top: 90px;
     margin-left: 130px;
     width: 540px;
-    height: auto;    
-    filter: drop-shadow(10px 10px 10px #000) ;
-    
+    height: auto;
+    filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
 }
 
 .registrarUsuario {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .registrar {
     padding-top: 10px;
 }
 
-.registrar input {
+.b {
+    padding-top: 0px;
+}
+
+.registrar input, select{
     width: 35%;
 }
 
-input {
+input, select {
     border-radius: 10px;
     padding: 3px 10px;
     border-color: var(--Lapizlazuli);
@@ -107,6 +114,18 @@ input {
     margin-left: -32px;
 }
 
+.warning {
+    font-size: 10px;
+    color: var(--Tangerine);
+    padding-top: 5px;
+}
+
+.requisitos {
+    font-size: 10px;
+    color: var(--CaputMortuum);
+    padding-top: 5px;
+}
+
 .titulo {
     font-weight: bold;
 }
@@ -117,7 +136,7 @@ h1 {
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 180px;
     display: flex;
     justify-content: space-between;
@@ -134,21 +153,21 @@ h1 {
 
 .bRegistrar:hover{
     background-color: #068dee
-
 }
 
 .bAtras {
     background-color: var(--CaputMortuum);
     border: none;
     border-radius: 50px;
-    padding: 10px 40px;
+    padding: 11px 40px;
+    font-size: 13px;
 }
 
 .bAtras:hover{
     background-color:#9c3a35;
 }
 
-.bLink, .bRegistrar {
+.bAtras, .bRegistrar {
     text-decoration: none;
     font-family: var(--font-monserrat);
     font-size: bold;

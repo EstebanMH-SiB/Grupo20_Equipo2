@@ -73,7 +73,7 @@ body {
     margin-left: 150px;
     width: 500px;
     height: auto;
-    filter: drop-shadow(10px 10px 10px #000) ;
+    filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
 }
 
 h1 {
@@ -97,6 +97,12 @@ input {
     position:absolute;
     margin-top: 28px;
     margin-left: 31%;
+}
+
+.warning {
+    font-size: 10px;
+    color: var(--Tangerine);
+    padding-top: 5px;
 }
 
 .log-link, .bLogin {
