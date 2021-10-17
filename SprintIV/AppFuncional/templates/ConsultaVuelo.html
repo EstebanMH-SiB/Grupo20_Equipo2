@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Vuelos</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename ='css/ConsultaVueloStyle.css')}}">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="/HomeUser" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link"></a>
+            <a href="/HomeUser" class="menu-link">
+                Name Surname
+                <img src="{{url_for('static', filename='icons/user.svg')}}" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>        
+        <form class="ItinerarioVuelo" method="GET" action="" onsubmit="">
+            <h1><i class="fas fa-solid fas fa-search-location"></i>Consulta de Vuelos</h1>
+            <div class="form">
+                <div class="name-sur">                    
+                    <span class="titulo">Codigo del Vuelo:
+                        <input type="text" name="name">
+                    </span>
+                    <span class="titulo">Fecha de Salida:
+                        <input type="date" name="name">
+                    </span>   
+                    
+                    
+                    <button class="Consultar">Consultar</button>
+                    
+                </div>
+                <br>
+                <br>
+                
+                <div class="ConsultaResuelta">
+                    <div>
+                        <span class="titulo">Codigo del Avión:
+                            <input type="text" name="name" readonly >
+                        </span>
+                    </div>
+                    
+                    <div>
+                        <span class="titulo">Codigo del piloto:
+                            <input type="text" name="name" readonly >
+                        </span>
+                    </div>
+                    
+                    <div>
+                        <span class="titulo">Hora de Salida:
+                            <input type="text" name="name" readonly >
+                        </span>
+                    </div>                    
+                </div>            
+                               
+            </div>
+            <div class="buttons">                
+                <button class="bAtras">
+                    <a href="/HomeUser" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contraseña</title>
+    <link rel="icon" type="svg" href= "{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/DelUsuarioStyle.css')}}">
+    <style> form { margin-left: 33%; } h1 { padding-left: 29px; } </style>
+</head>
+
+<body>
+
+    <header class="page-head">
+        <a href="/HomeUser" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            
+            <a href="/HomeUser" class="menu-link">
+                Name Surname
+                <img src="{{url_for('static', filename='icons/user.svg')}}" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="eUsuario" method="GET" action="">
+            <h1>Cambiar Contraseña</h1>
+            <div class="form">
+                <label class="ns">
+                    <span class="titulo">Contraseña Anterior:</span>
+                    <input type="password" name="password">
+                    <img src="{{url_for('static', filename='icons/eyeO.svg')}}" alt="ver" class="eye">
+                    <span class="warning" id="npWarning"></span>
+                </label>
+                <label class="ns">
+                    <span class="titulo">Nueva Contraseña:</span>
+                    <input type="password" name="password"
+                           onfocus="mostrarpReq('◦Tener mínimo 8 caractéres<br>◦Tener máximo 12 caractéres<br>◦Tener Números<br>◦Tener Mayúsculas y Minúsculas');"
+                           onblur="mostrarpReq('')">
+                    <img src="{{url_for('static', filename='icons/eyeO.svg')}}" alt="ver" class="eye">
+                    <span class="warning" id="pWarning"></span>
+                </label>
+                <label class="ns">
+                    <span class="titulo">Confirmar Nueva Contraseña:</span>
+                    <input type="password" name="password">
+                    <img src="{{url_for('static', filename='icons/eyeO.svg')}}" alt="ver" class="eye">
+                    <span class="warning" id="pcWarning"></span>
+                </label>
+            </div>
+            <div class="buttons">
+                <button class="bGestion">Cambiar</button>
+                <button class="bAtras">
+                    <a href="/HomeUser" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
+</body>

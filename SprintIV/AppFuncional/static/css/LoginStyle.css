@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+.page-head {
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+.menu i{
+    padding: 5px;
+}
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+}
+
+.logUsuario, .user {
+    float: left;
+    width: 50%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.logUsuario {
+    margin-top: 120px;
+}
+
+.ns, .links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    margin-bottom: 20px;
+}
+
+.user {
+    margin-top: 120px;
+    margin-left: 150px;
+    width: 500px;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
+}
+
+h1 {
+    color: var(--Tangerine);
+    font-size: 40px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 3px 10px;
+    border-color: var(--Lapizlazuli);
+    font-family: var(--font-hind);
+}
+
+.eye {
+    position:absolute;
+    margin-top: 28px;
+    margin-left: 31%;
+}
+
+.warning {
+    font-size: 10px;
+    color: var(--Tangerine);
+    padding-top: 5px;
+}
+
+.log-link, .bLogin {
+    margin-bottom: 20px;
+}
+
+.log-link:hover{
+   color: #9c3a35;
+}
+
+.bellow {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bLogin {
+    background-color: var(--Lapizlazuli);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 40px;
+}
+
+.bLogin:hover{
+    background-color: #068dee;
+}
+
+.bAtras {
+    background-color: var(--CaputMortuum);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.bAtras:hover{
+    background-color:#9c3a35;
+}
+
+.bLink, .bLogin {
+    text-decoration: none;
+    font-family: var(--font-monserrat);
+    font-size: bold;
+    color: var(--MintCream);
+}
+
+.log-link {
+    text-decoration: none;
+    font-size: bold;
+    color: var(--Tangerine); 
+}
+
+.log-link:hover {
+    text-decoration: underline;
+}
+
+.bellow a {
+    margin-bottom: 0px;
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+.page-head {
+    background-color: var(--Lapizlazuli);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.bloque {
+    background-color: var(--Lapizlazuli);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 186.1px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.banner {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+table {
+    width: 100%;
+}
+
+table, th, td {
+    /*border: solid 1px #015C8F;*/
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0.5rem;
+    
+}
+
+
+
+.titulosCeldas {
+    font-family: var(--font-monserrat);
+    font-weight: 700;
+    font-size: 7;
+    margin-bottom: 0px;
+    color: var(--Tangerine);
+    
+
+}
+
+.link-bloque {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+    padding-left: 0px;
+    font-family: var(--font-abadi);
+    font-weight: 700;
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+}
+
+h1 {
+    font-family: var(--font-monserrat);
+    margin: 10px 0px 8px 25%;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: var(--Tangerine);
+}
+
+.h1 {
+    margin-left: -25px;
+    font-size: 85px;
+    color: var(--Lapizlazuli)
+}
+
+h2 {
+    margin: 0px 10px;
+    color: var(--MintCream);
+}
+
+h3 {
+    font-family: var(--font-monserrat);
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: var(--Tangerine);
+}
+

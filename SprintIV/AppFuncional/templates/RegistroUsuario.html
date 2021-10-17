@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/RegistrarStyle.css')}}">
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="/Home" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="/Home" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
+            <a href="/Login" class="menu-link"><i class="fas fa-solid fas fa-sign-in-alt"></i>Ingresar</a>
+            <a href="/RegistroUsuario" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+    <main>
+        <img src="{{url_for('static', filename='icons/group.svg')}}" alt="group.svg" class="group">
+        <form class="registrarUsuario" id="registrarUsuario" method="POST" action="">
+            <h1>Registrarse</h1>
+            <div class="form">
+                <div class="name-sur">
+                    <label class="ns">
+                        <span class="titulo">Nombres:</span>
+                        <input type="text" id="name">
+                        <span class="warning" id="nameWarning"></span>
+                    </label>
+                    <label class="ns">
+                        <span class="titulo">Apellidos:</span>
+                        <input type="text" id="surname">
+                        <span class="warning" id="snameWarning"></span>
+                    </label>
+                </div>
+                <label class="registrar">
+                    <span class="titulo">Sexo:</span>
+                    <select id="sex" onmousedown="changeMargin('60px')" onmouseleave="changeMargin('0px')">
+                        <option value="" selected disabled hidden>--Seleciona tu sexo--</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="noDefinido">Prefiero no decir</option>
+                    </select>
+                </label>
+                <div class="form aftersex">
+                    <span class="warning" id="sexWarning"></span>
+                    <label class="registrar">
+                        <span class="titulo">Fecha de Nacimiento:</span>
+                        <input type="date" id="birthday">
+                    </label>
+                    <label class="registrar">
+                        <span class="titulo">Correo Electrónico:</span>
+                        <input type="email" id="email" placeholder="example@correo.com">
+                    </label> 
+                    <span class="warning" id="e-Warning"></span>
+                    <br>
+                    <label class="registrar b">
+                        <span class="titulo">Usuario:</span>
+                        <input type="text" id="username" 
+                            onfocus="mostrarReq('uReq','◦Tener mínimo 6 caractéres<br>◦Tener máximo 30 caractéres<br>◦Tener Números');"
+                            onblur="mostrarReq('uReq', '')">
+                    </label> 
+                    <span class="warning" id="uWarning"></span> <span class="requisitos" id="uReq"></span>
+                    <label class="registrar b">
+                        <span class="titulo">Contraseña:</span>
+                        <input type="password" id="password"
+                            onfocus="mostrarReq('pReq','◦Tener mínimo 8 caractéres<br>◦Tener máximo 16 caractéres<br>◦Tener Números<br>◦Tener Mayúsculas y Minúsculas');"
+                            onblur="mostrarReq('pReq', '')">
+                        <img src="{{url_for('static', filename='icons/eyeO.svg')}}" alt="ver" class="eye" id="peye" 
+                             onmouseover="see_pword('eyeC', 'text')" onmouseleave="see_pword('eyeO', 'password')">
+                    </label> 
+                    <span class="warning" id="pWarning"></span> <span class="requisitos" id="pReq"></span>
+                    <label class="registrar b">
+                        <span class="titulo">Confirmar Contraseña:</span>
+                        <input type="password" id="pconfirmation">
+                        <img src="{{url_for('static', filename='icons/eyeO.svg')}}" alt="ver" class="eye" id="pceye" 
+                             onmouseover="see_pcword('eyeC', 'text')" onmouseleave="see_pcword('eyeO', 'password')">
+                    </label> 
+                    <span class="warning" id="pcWarning"></span>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" value="" name="TeC" class="check">
+                <label for="TeC" class="check">
+                    Acepta los <a href="" class="T-C">Términos y Condiciones</a>
+                </label>
+                <span class="warning" id="TCWarning"></span>
+            </div>
+            <div class="buttons">
+                <button class="bRegistrar" id="bRegistrar" type="submit">Registrar</button>
+                <a class="bAtras" href="/Home">Atras</a>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/RUsuarioScript.js')}}"></script>
+<script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+
+</html>

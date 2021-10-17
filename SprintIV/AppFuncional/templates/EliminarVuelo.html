@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/EliminarVueloStyle.css')}}" />
+    <script type="text/javascript" src="{{url_for('static', filename='js/codigojava.js')}}"></script>
+    <title>Eliminación de vuelos</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="page-head">
+        <a href="/HomeAdministrador" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="/HomeAdministrador" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>            
+            <a href="/RegistroUsuarioAdmin" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="{{url_for('static', filename='imagenes/avionarriba.png')}}" alt="user+.svg" class="avion"/>
+        <form class="ElimVuelo" method="GET" action="">
+            <h1>Eliminación de vuelos</h1>         
+            
+            <div class="agrupados">
+                <span class="titulo" >Código del vuelo:</span>
+                <input id="txtcodigoVuelo" type="text" name="codigoVuelo" placeholder="ID vuelo" title="codigoVuelo" class="camposTexto"/>
+                <br><br>
+                <span class="titulo">Código del avión:</span>
+                <input id="txtcodigoAvion" type="text" name="codigoAvion" placeholder="ID vuelo" title="codigoAvion"
+                    class="camposTexto" />
+                <br><br>
+                <span class="titulo">Código del piloto:</span>
+                <input class="camposTexto" id="txtcodigoPiloto" type="text" name="txtcodigoPiloto"
+                    placeholder="ID Piloto" title="codigoPiloto" />
+                    <br><br>
+                <span class="titulo">Itinerario de vuelo:</span>
+                <input id="txtitinerario" type="text" name="itinerario" placeholder="Ciudad de origen - destino"
+                    title="itinerario" class="camposTexto" />
+                <br><br>
+                <span class="titulo">Fecha de salida:</span>
+                <input class="camposTexto" type="date" id="birthday" name="nacimiento">
+                <br><br>
+
+                <span class="titulo">Hora de salidad:</span>
+                <input class="camposTexto" id="txthoraSalida" type="time" name="horaSalida" placeholder="00:00"
+                    title="horaSalida" />
+                <br><br>
+                <span class="titulo">Motivo de la eliminación:</span>
+                <textarea class="camposTexto" id="txtmotivoEliminar" type="textarea" name="motivoEliminar" 
+                    title="motivoEliminar"rows="2" cols="50">Haga una breve descripción del motivo para eliminar el vuelo</textarea>
+
+            </div>
+            <br><br>
+
+
+
+            <div class="agrupados">
+                <input class="bEliminar" type="submit" value="Eliminar">
+                <a href="/HomeAdministrador"><input class="bAtras" type="submit" value="Atras"></a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

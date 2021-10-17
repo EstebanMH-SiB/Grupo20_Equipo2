@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Juan Casiano</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/HomeUsuarioLogueadoStyle.css')}}">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="/HomeUser" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="/ConsultaVuelos" class="menu-link"><i class= "fab fa-avianex"></i>Consulta de Vuelo</a>
+            <a href="/Comentarios" class="menu-link"><i class="fas fa-solid fas fa-comments"></i>Comentarios de vuelo</a>
+            <a href="/ReservaVuelo" class="menu-link"><i class="fas fa-solid fas fa-globe-americas"></i>Reservar vuelos</a>
+            <a href="/InfoUser" class="menu-link"><i class="fas fa-solid fas fa-portrait"></i>Nombre Usuario</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider">
+            <ul>
+                <li> <img class="banner" src="{{url_for('static', filename='imagenes/Banner.png')}}" alt="Banner" height="120%" width="100%"></li>
+                <li> <img class="banner2" src="{{url_for('static', filename='imagenes/banner2.png')}}" alt="Banner" height="120%" width="100%"></li>
+                <li> <img class="banner3" src="{{url_for('static', filename='imagenes/banner3.png')}}" alt="Banner" height="120%" width="100%"></li>
+                <li> <img class="banner4" src="{{url_for('static', filename='imagenes/banner4.png')}}" alt="Banner" height="120%" width="100%"></li>
+            </ul>
+        </div>       
+        <form class="reservarVuelo" method="GET" action="">
+           <h2> Reserva Tu Vuelo</h2>
+           <div class="form">
+                <div class="org-des">
+                        <label class="org">
+                                <span class="titulo">O R I G E N</span>
+                                <div class="funcion">
+                                    <img src="{{url_for('static', filename='icons/search.svg')}}" alt="" width="24px" height="24px">
+                                    <input type="text" class="origen" name="origen">
+                                </div>
+                        </label>
+                        <label class="org">
+                                <span class="titulo">D E S T I N O</span>
+                                <div class="funcion">
+                                    <img src="{{url_for('static', filename='icons/search.svg')}}" alt="" width="24px" height="24px">
+                                    <input type="text" class="destino" name="destino">
+                                </div>
+                        </label>
+                    </div>
+                <label class="reservar">
+                    <span class="titulo">F  E C H A</span>
+                    <div class="funcion">
+                        <input type="date" class="fecha" name="fecha">
+                        </div>
+                </label>
+                <label class="reservar">
+                    <span class="titulo">P E R S O N A S</span>
+                    <div class="funcion">
+                        <img src="{{url_for('static', filename='icons/user.svg')}}" alt="" width="24px" height="24px">
+                        <input type="number" name="persona" class="persona" min="1" max="99">
+                        <span class="personas">personas</span>
+                        </div>
+                </label>
+                <button name="Buscar" class="submit">Buscar</button>
+            </div>
+        </form>
+
+        <article class="OpcionesLista">
+            <a href="/ConsultaVuelos"><div class=" Opciones" id="Opcion1"><h2 class="TitulOp">Consulta De Vuelos</h2></div></a>
+            <a href="/Comentarios"><div class=" Opciones" id="Opcion2"><h2 class="TitulOp">Comentarios De Vuelos</h2></div></a>
+            <a href="/ReservaVuelo"><div class=" Opciones" id="Opcion3"><h2 class="TitulOp">Reserva de Vuelos</h2></div></a>
+            <a href="/InfoUser"><div class=" Opciones" id="Opcion4"><h2 class="TitulOp">Perfil Del Usuario</h2></div></a>
+            
+        </article>
+
+        <aside class="information">
+            <div id="map">
+                <h3 class="aside">Ubicación</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.7890528525686!2d-77.89539813362356!3d2.5751982934151507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e7b0168208b0ffe!2sAeropuerto%20Nacional%20Juan%20Casiano%20Gb!5e0!3m2!1sen!2sco!4v1632938010972!5m2!1sen!2sco" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <section class="ListaComentarios">
+                <h3 class="aside">Comentarios</h3>
+                <div class="comentarios">
+                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
+                    <div class="user">    
+                        <div class="userName">User User</div>
+                        <div>La comodidad de las sillas, y la rapidez del personal para
+                             atenderte, de seguro vuelven la experiencia en este
+                             aeropuerto asombrosa</div>
+                    </div>
+                </div>
+                <div class="comentarios">
+                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
+                    <div class="user">    
+                        <div class="userName">User User</div>
+                        <div>La comodidad de las sillas, y la rapidez del personal para
+                             atenderte, de seguro vuelven la experiencia en este
+                             aeropuerto asombrosa</div>
+                    </div>
+                </div>
+                <div class="comentarios">
+                    <img src="https://www.loomcrafts.com/wp-content/uploads/2018/09/placeholder-square.jpg" alt="foto">
+                    <div class="user">    
+                        <div class="userName">User User</div>
+                        <div>La comodidad de las sillas, y la rapidez del personal para
+                             atenderte, de seguro vuelven la experiencia en este
+                             aeropuerto asombrosa</div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/RecuperarContraseñaStyle.css')}}">
+    <script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="page-head">
+        <a href="/Home" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="/Home" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
+            <a href="/Login" class="menu-link"><i class="fas fa-solid fas fa-sign-in-alt"></i>Ingresar</a>
+            <a href="/RegistroUsuario" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="{{url_for('static', filename='icons/lock.svg')}}" alt="lock.svg" class="lock"/>
+        <form class="rContraseña" method="GET" action="">
+            <h1>Recuperar Contraseña</h1>
+            <div class="form">
+                <label class="ns">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" name="userName">
+                </label>
+                <label class="ns">
+                    <span class="titulo">Correo Electronico:</span>
+                    <input type="email" name="email" placeholder="example@correo.com">
+                </label>
+            </div>
+            <div class="links">
+                <button class="bRecuperar">Recuperar</button>
+                <button class="bAtras">
+                    <a href="/Login" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

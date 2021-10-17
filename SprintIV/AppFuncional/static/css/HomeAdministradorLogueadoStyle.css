@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /*Colors*/
+    --Lapizlazuli: #015C8F;
+    --Tangerine: #F18B12;
+    --MintCream: #EBF4ED;
+    --CaputMortuum: #58201D;
+    --EerieBlack: #161616;
+
+    /*Fonts*/
+    --font-monserrat: 'Montserrat', sans-serif;
+    --font-abadi: 'Raleway', sans-serif;
+    --font-hind: 'Hind', sans-serif;
+}
+
+.page-head {   
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+
+.slider{    
+    width: 100%;
+    margin:auto; 
+    overflow: hidden;   
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider banner{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}    
+}
+
+.menu-link {
+    color: var(--MintCream);
+    text-decoration: none;
+    padding-left: 50px;
+    font-family: var(--font-abadi);
+}
+
+.menu i{
+    padding: 5px;
+    
+}
+
+.menu-link:hover {
+    color: var(--Tangerine);
+}
+
+body {
+    margin: 0pt;
+    font-family: var(--font-abadi);
+}
+
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.reservarVuelo {
+    background: rgb(3,161,251);
+    background: radial-gradient(circle, rgba(3,161,251,1) 30%, rgba(2,115,180,1) 70%, rgba(1,92,143,1) 100%);
+    padding: 10px 13%;
+  
+}
+
+.titulo {
+    color: var(--MintCream);
+    font-size: 10px;
+}
+
+.form {
+    display: flex;
+    margin: 5px 10px 10px 10px;
+    padding-left: 20px;
+}
+
+.org-des {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.funcion {
+    display: flex;
+}
+
+.personas {
+    color: var(--MintCream);
+    padding-left: 5px;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    color: #58201D;
+    padding-left: 10px;
+}
+
+.reservar {
+    margin-left: 30px;
+}
+
+.org span {
+    padding: 24px;
+}
+
+button {
+    background-color: var(--Tangerine);
+    color: var(--MintCream);
+    margin-left: 30px;
+    border: none;
+    border-radius: 50px;
+    padding: 0px 50px;
+    font-family: var(--font-monserrat);
+    font-size: 14px;
+}
+
+button:hover{
+    background-color:#ff9616;
+}
+
+h1 {
+    font-family: var(--font-monserrat);
+    margin: 10px 0px 8px 25%;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: var(--Tangerine);
+}
+
+.h1 {
+    margin-left: -25px;
+    font-size: 85px;
+    color: var(--Lapizlazuli)
+}
+
+h2 {
+    margin: 0px 10px;
+    color: var(--MintCream);
+}
+
+h3 {
+    font-family: var(--font-monserrat);
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: var(--Tangerine);
+}
+
+h3.article {
+    font-family: var(--font-hind);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+h3.aside {
+    font-weight: bold;
+    margin-bottom: 18.720px;
+    color: var(--CaputMortuum);
+}
+
+p {
+    margin-top: 0px;
+    color: var(--EerieBlack);
+}
+
+.comentarios img {
+    padding: 10px;
+    width: 90px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.comentarios { 
+    display: flex;
+    margin: 0px 40px 20px 30px;
+    background-color: var(--Lapizlazuli);
+    border-radius: 15px;
+}
+
+.comentarios div.user{
+    color: #EBF4ED;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.userName {
+    padding: 10px 0px 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Tangerine);
+}
+
+#map {   
+    float: right;  
+    width: 50%;    
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.ListaComentarios{
+    float: left;
+    width: 50%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.OpcionesLista{
+    padding-top: 0.3%;
+    padding-left: 0%;
+    padding-left: 3%;
+}
+
+.Opciones{
+    background: rgb(3,161,251);    
+    display: inline-block;    
+    width: 24%;
+    height: 300px;
+    margin-left: 0%;  
+    padding: 0% 0%;  
+    filter: drop-shadow(10px 10px 10px #000); 
+    z-index: 10;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.TitulOp{
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    margin: 10px;
+    margin-top:50%;
+    margin-left: 15%;
+    
+}
+
+#Opcion1{
+    background-image: url(../imagenes/ConsultarVuelo.png);
+    background-size: 100% 100%;
+    border: 2px solid rgb(3,161,251) ;
+    align-items: center; 
+    position: relative;
+}
+
+#Opcion1:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion2{
+    background-image: url(../imagenes/EdicionVuelos.jpg);
+    background-color: rgb(3,161,251);
+    background-size: cover;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;
+    
+    
+}
+
+#Opcion2:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion3{
+    background-image: url(../imagenes/EliminarVuelo.jpg);
+    background-size: cover;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;    
+   
+}
+
+#Opcion3:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion4{
+    background-image: url(../imagenes/RegistroUsuario.jpg);
+    background-size: cover;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;    
+}
+
+#Opcion4 h2{
+    margin-top: 40%;
+}
+
+#Opcion4:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion5{
+    background-image: url(../imagenes/EliminarUsuario.png);
+    background-size: contain;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;    
+}
+
+#Opcion5:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion6{
+    background-image: url(../imagenes/EdicionUsuario.jpg);
+    background-size: contain;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;    
+}
+
+#Opcion6:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion7{
+    background-image: url(../imagenes/ComentarioVuelo2.jpg);
+    background-size: 100% 500px;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;  
+    background-size:cover;
+}
+
+#Opcion7:hover{
+    filter: grayscale(100%);
+}
+
+#Opcion8{
+    background-image: url(../imagenes/InformacionUsuario.png);
+    background-size: contain;
+    border: 2px solid rgb(3,161,251) ;
+    position: relative;    
+}
+
+#Opcion8:hover{
+    filter: grayscale(100%);
+}

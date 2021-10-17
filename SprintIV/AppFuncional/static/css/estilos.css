@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(228, 230, 241);
+    font-family: 'Lato';
+}
+
+.titulos {
+    color: rgb(9, 74, 125);
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.Encabezados {
+    border-style: none;
+    border-width: 0px;
+    line-height: 30px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.agrupados {
+    background-color: rgb(230, 122, 17);
+    border: rgb(68, 22, 22);
+    width: 50%;
+    border-radius: 5px;
+    margin-left: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.agrupadosizquierda {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0%;
+    text-align: end;
+}
+
+.camposTexto {
+    height: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0.01%;
+    background-color: rgb(109, 68, 68);
+    border-style: groove;
+}
+
+.boton {
+    color: black;
+    background-color: rgb(9, 74, 125);
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+    height: 35px;
+    border-style: double;
+}
+
+#imagenAvion {
+    margin: auto;
+    width: 60%;
+    height: 5%;
+    padding: 100px;
+}

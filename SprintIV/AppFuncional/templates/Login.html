@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/LoginStyle.css')}}">
+</head>
+
+<body>
+
+    <header class="page-head">
+        <a href="/Home" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="/Home" class="menu-link"><i class= "fas fa-solid fas fa-home" ></i>Inicio</a>
+            <a href="/Login" class="menu-link"><i class="fas fa-solid fas fa-sign-in-alt"></i>Ingresar</a>
+            <a href="/RegistroUsuario" class="menu-link"><i class="fas fa-solid fas fa-users"></i>Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="{{url_for('static', filename='icons/user+.svg')}}" alt="user+.svg" class="user"/>
+        <form class="logUsuario" method="GET" action="">
+            <h1>Ingresar</h1>
+            <div class="form">
+                <label class="ns">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" id="userName">
+                    <span class="warning" id="uWarning"></span>
+                </label>
+                <label class="ns">
+                    <span class="titulo">Contraseña:</span>
+                    <input type="password" id="password">
+                    <img src="{{url_for('static', filename='icons/eyeO.svg')}}" alt="ver" class="eye" id="peye" 
+                         onmouseover="see_pword('eyeC', 'text')" onmouseleave="see_pword('eyeO', 'password')">
+                    <span class="warning" id="pWarning"></span>
+                    </label>
+            </div>
+            <div class="links">
+                <a href="/RecuperarContraseña" class="log-link">¿Olvidaste Tu Contraseña?</a>
+                <button class="bLogin" id="bLogin" type="submit">Ingresar</button>
+                <div class="bellow">
+                    <a href="/RegistroUsuario" class="log-link">No Estoy Registrado</a>
+                    <button class="bAtras">
+                        <a href="/Home" class="bLink">Atras</a>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/LoginScript.js')}}"></script>
+<script src="https://kit.fontawesome.com/07398d27e2.js" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/EdUsuarioStyle.css')}}">
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="Home.html" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">            
+            <a href="/InfoPiloto" class="menu-link">
+                Name Surname
+                <img src="{{url_for('static', filename='icons/user.svg')}}" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="{{url_for('static', filename='imagenes/placeholder-square.jpg')}}" alt="user.svg" class="user">
+        <form class="editarUsuario" method="GET" action="" onsubmit="">
+            <h1>Información del Piloto</h1>
+            <div class="form">
+                
+                <label class="ns">
+                    <span class="titulo">Nombres:</span>
+                    <input type="text" name="name" readonly>
+                </label>
+                <label class="ns">
+                    <span class="titulo">Apellidos:</span>
+                    <input type="text" name="surname" readonly>
+                </label>          
+                
+                <label class="registrar">
+                    <span class="titulo">Nombre de Usuario:</span>
+                    <input type="text" name="username" readonly>
+                </label>
+
+                <label class="registrar">
+                    <span class="titulo">Tipo de Usuario:</span>
+                    <input type="text" name="userTipe" readonly>
+                </label>
+                               
+                
+                <label class="registrar">
+                    <span class="titulo">Sexo:</span>
+                    <input type="text" name="UserSex" readonly>
+                    
+                </label>
+
+                <label class="registrar">
+                    <span class="titulo">Fecha de Nacimiento:</span>
+                    <input type="text" name="UserBird" readonly>
+                </label>
+                <label class="registrar">
+                    <span class="titulo">Correo Electrónico:</span>
+                    <input type="text" name="UserEmail" readonly>
+                </label>
+            </div>
+            <div class="buttons">                
+                <button class="bAtras">
+                    <a href="/HomePiloto" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

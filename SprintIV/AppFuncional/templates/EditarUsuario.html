@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edición</title>
+    <link rel="icon" type="svg" href="{{url_for('static', filename='icons/Logo.svg')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/EdUsuarioStyle.css')}}">
+</head>
+<body>
+    
+    <header class="page-head">
+        <a href="/HomeAdministrador" class="logo">
+            <img src="{{url_for('static', filename='icons/GuapiLogo.svg')}}" alt="Aeropuerto Juan Casiano" height="auto" width="150pt">
+        </a>
+        <nav class="menu">
+            <a href="#" class="menu-link"></a>
+            <a href="#" class="menu-link"></a>
+            <a href="/HomeAdministrador" class="menu-link">
+                Name Surname
+                <img src="{{url_for('static', filename='icons/user.svg')}}" alt="user">
+                <span>BIENVENIDO,</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="{{url_for('static', filename='imagenes/placeholder-square.jpg')}}" alt="user.svg" class="user">
+        <form class="editarUsuario" method="GET" action="" onsubmit="">
+            <h1>Editar Usuario</h1>
+            <div class="form">
+                <div class="name-sur">
+                    <label class="ns">
+                        <span class="titulo">Nombres:</span>
+                        <input type="text" name="name">
+                    </label>
+                    <label class="ns">
+                        <span class="titulo">Apellidos:</span>
+                        <input type="text" name="surname">
+                    </label>
+                </div>
+                <br>
+                <label class="registrar">
+                    <span class="titulo">Usuario:</span>
+                    <input type="text" name="username">
+                </label>
+                <a href="/CambiarContraseña" class="registrar">
+                    <button class="bCambiarP" type="button">Cambiar Contraseña</button>
+                </a>
+                <br>
+                <label class="registrar">
+                    <span class="titulo">Sexo:</span>
+                    <select name="sex">
+                        <option value="" selected>--Seleciona tu sexo--</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="null">Prefiero no decir</option>
+                    </select>
+                </label>
+                <label class="registrar">
+                    <span class="titulo">Fecha de Nacimiento:</span>
+                    <input type="date" name="birthday">
+                </label>
+                <label class="registrar">
+                    <span class="titulo">Correo Electrónico:</span>
+                    <input type="email" name="email" placeholder="example@correo.com">
+                </label>
+            </div>
+            <div class="buttons">
+                <button class="bEditar" type="submit">Editar</button>
+                <button class="bAtras">
+                    <a href="/HomeAdministrador" class="bLink">Atras</a>
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
