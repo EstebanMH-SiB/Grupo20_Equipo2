@@ -97,6 +97,35 @@
                 <a class="bAtras" href="/Home">Atras</a>
             </div>
         </form>
+
+        <h1>prueba con el otro formulario</h1>
+        <form action="{{ url_for('RegistroUsuario') }}" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="grupo">
+                {{ form.usuario.label }}
+                {{ form.usuario(class="control") }}
+            </div>
+            <div class="grupo">
+                {{ form.nombre.label }}
+                {{ form.nombre(class="control") }}
+            </div>
+            <div class="grupo">
+                {{ form.correo.label }}
+                {{ form.correo(class="control") }}
+            </div>
+            <div class="grupo">
+                {{ form.contrasena.label }}
+                {{ form.contrasena(class="control") }}
+            </div>
+            <div class="grupo">
+                {{ form.enviar(class="boton") }}
+            </div>
+            <div class="grupo">
+                {% if mensaje %}
+                    {{ mensaje }}
+                {% endif %}
+            </div>
+        </form>
     </main>
 
 </body>

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from utils import *
+from forms import FormRegistro
 
 app = Flask(__name__)
 
