@@ -1,8 +1,11 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
 from utils import *
 from forms import FormRegistro
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.urandom(30)
+
 
 @app.route('/', methods=["GET",'POST'])
 def index():
@@ -12,11 +15,11 @@ def index():
 def AgregarVuelo():
     return render_template('AgregarVuelo.html')
 
-@app.route('/CambiarContraseña', methods=["GET",'PUT','POST'])
+@app.route('/CambiarContraseña', methods=["GET",'PUT'])
 def CambContraseña():
     return render_template('CambiarContraseña.html')
 
-@app.route('/Comentarios', methods=["GET",'PUT'])
+@app.route('/Comentarios', methods=["GET", "POST"])
 def Comentarios():
     return render_template('ComentarioVuelos.html')
 
@@ -40,23 +43,23 @@ def EditarVuelo():
 def EliminarUser():
     return render_template('EliminarUser.html')
 
-@app.route('/EliminarVuelo', methods=["GET",'POST'])
+@app.route('/EliminarVuelo', methods=["GET",'DELETE'])
 def EliminarVuelo():
     return render_template('EliminarVuelo.html')
 
-@app.route('/Home', methods=['GET','POST',"PUT"])
+@app.route('/Home', methods=['GET','POST'])
 def Home():
     return render_template('Home.html')
 
-@app.route('/HomeAdministrador', methods=['GET'])
+@app.route('/HomeAdministrador', methods=['GET','POST'])
 def HomeAdministrador():
     return render_template('HomeAdministradorLogueado.html')
 
-@app.route('/HomePiloto', methods=['GET'])
+@app.route('/HomePiloto', methods=['GET','POST'])
 def HomePiloto():
     return render_template('HomePilotoLogueado.html')
 
-@app.route('/HomeUser', methods=['GET'])
+@app.route('/HomeUser', methods=['GET','POST'])
 def HomeUser():
     return render_template('HomeUsuarioLogueado.html')
 
@@ -83,44 +86,19 @@ def RecuperarContraseña():
 @app.route('/RegistroUsuario', methods=['GET','POST'])
 def RegistroUsuario():
     if request.method == "GET":
-            return render_template('RegistroUsuario.html')
+        formulario = FormRegistro()
+        return render_template('RegistroUsuario.html', form=formulario)
     else:
-        if request.form:
-            nombre = request.form['nombre']
-            usuario = request.form['usuario']
-            sexo = request.form['sexo']
-            email = request.form['email']
-            contrasena = request.form['contrasena']
-            declaracion = request.form['declaracion']
+        formulario = FormRegistro(request.form)
+        if formulario.validate_on_submit():
+            return render_template('RegistroUsuario.html',mensaje="Registro exitoso.", form=formulario)
+        return render_template('RegistroUsuario.html', mensaje="Registro inválido, compruebe los campos", form=formulario)
 
-            errores = ""
-            exito = ""
-
-            if len(nombre) <= 0:
-                errores+= "Debe escribir un nombre válido. "
-            
-            if not isUsernameValid(usuario):
-                errores+= "Debe escribir un nombre de usuario válido. "
-            
-            if not isEmailValid(email):
-                errores+= "Debe escribir un email válido. "
-            
-            if not isPasswordValid(contrasena):
-                errores+= "La contraseña no cumple con los requisitos de seguridad. "
-            
-            if declaracion != "S":
-                errores+= "Debe aceptar los terminos legales. "
-
-            if not errores:
-                exito = "Su cuenta ha sido registrada"
-                return redirect(url_for('login'))
-            else:
-                return render_template('registro.html', error=errores)
 
 @app.route('/RegistroUsuarioAdmin', methods=['GET','POST'])
 def RegistroUsuarioAdmin():
     return render_template('RegistroUsuarioSuperAdmin.html')
 
-@app.route('/ReservaVuelo', methods=['GET'])
+@app.route('/ReservaVuelo', methods=['GET','POST'])
 def ReservaVuelo():
     return render_template('ReservaVuelo.html')

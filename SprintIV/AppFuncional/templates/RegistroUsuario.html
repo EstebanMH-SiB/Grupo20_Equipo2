@@ -24,18 +24,18 @@
     <main>
     <main>
         <img src="{{url_for('static', filename='icons/group.svg')}}" alt="group.svg" class="group">
-        <form class="registrarUsuario" id="registrarUsuario" method="POST" action="">
+        <form class="registrarUsuario" id="registrarUsuario" method="POST" action="{{ url_for('RegistroUsuario') }}">
             <h1>Registrarse</h1>
             <div class="form">
                 <div class="name-sur">
                     <label class="ns">
                         <span class="titulo">Nombres:</span>
-                        <input type="text" id="name">
+                        {{ form.nombre}}
                         <span class="warning" id="nameWarning"></span>
                     </label>
                     <label class="ns">
                         <span class="titulo">Apellidos:</span>
-                        <input type="text" id="surname">
+                        {{ form.apellido}}
                         <span class="warning" id="snameWarning"></span>
                     </label>
                 </div>
@@ -56,16 +56,22 @@
                     </label>
                     <label class="registrar">
                         <span class="titulo">Correo Electrónico:</span>
-                        <input type="email" id="email" placeholder="example@correo.com">
+                        {{ form.correo}}
                     </label> 
                     <span class="warning" id="e-Warning"></span>
+                    
+                    
                     <br>
                     <label class="registrar b">
                         <span class="titulo">Usuario:</span>
                         <input type="text" id="username" 
                             onfocus="mostrarReq('uReq','◦Tener mínimo 6 caractéres<br>◦Tener máximo 30 caractéres<br>◦Tener Números');"
                             onblur="mostrarReq('uReq', '')">
+                            {{form.usuario}}
                     </label> 
+                    
+                    
+                    
                     <span class="warning" id="uWarning"></span> <span class="requisitos" id="uReq"></span>
                     <label class="registrar b">
                         <span class="titulo">Contraseña:</span>
@@ -97,29 +103,6 @@
                 <a class="bAtras" href="/Home">Atras</a>
             </div>
         </form>
-
-        <h1>prueba con el otro formulario</h1>
-        <form action="{{ url_for('RegistroUsuario') }}" method="POST">
-            {{ form.hidden_tag() }}
-            <div class="grupo">
-                {{ form.usuario.label }}
-                {{ form.usuario(class="control") }}
-            </div>
-            <div class="grupo">
-                {{ form.nombre.label }}
-                {{ form.nombre(class="control") }}
-            </div>
-            <div class="grupo">
-                {{ form.correo.label }}
-                {{ form.correo(class="control") }}
-            </div>
-            <div class="grupo">
-                {{ form.contrasena.label }}
-                {{ form.contrasena(class="control") }}
-            </div>
-            <div class="grupo">
-                {{ form.enviar(class="boton") }}
-            </div>
             <div class="grupo">
                 {% if mensaje %}
                     {{ mensaje }}

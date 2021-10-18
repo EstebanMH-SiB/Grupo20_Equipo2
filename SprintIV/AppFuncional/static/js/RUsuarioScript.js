@@ -123,11 +123,11 @@ function changeMargin(px) {
 }
 
 function see_pword(eye, type){
-    document.getElementById("peye").setAttribute("src", "../../icons/" + eye + ".svg");
+    document.getElementById("peye").setAttribute("src", "/static/icons/" + eye + ".svg");
     contraseña.setAttribute("type", type);
 }
 
 function see_pcword(eye, type){
-    document.getElementById("pceye").setAttribute("src", "../../icons/" + eye + ".svg");
+    document.getElementById("pceye").setAttribute("src", "/static/icons/" + eye + ".svg");
     confirmarc.setAttribute("type", type);
 }
